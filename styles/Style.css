@@ -24,11 +24,10 @@ height: 100em;
 .anchor{
     background: url("../resources/img/ArrowUp.png");
     background-size: cover;
-    margin-bottom: 5%;
-    margin-right: 5%;
     width: 30px;
     height: 30px;
     position: fixed;
+    margin: 40% 0 0 84%;
 }
 .PhotoLogo{
     margin: 10px;
