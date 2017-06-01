@@ -1,0 +1,47 @@
+.menu{
+    position: fixed;
+}
+ul{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}/*
+.RootMenu{
+    position: relative;
+    display: inline-block;
+}*/
+.RootMenu > li > ul{
+    display: none;
+}
+.RootMenu > li:hover ul{
+    display: block;
+}
+.content{
+height: 100em;
+}
+.anchor{
+    background: url("../resources/img/ArrowUp.png");
+    background-size: cover;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+}
+.PhotoLogo{
+    margin: 10px;
+    background: url("../resources/img/Logo.png");
+    background-size: 100% 100%;
+    height: 55px;
+        width: 70px;
+
+}
+.facebook{
+    height: 30px;
+}
+ .logoText{
+     float: left;
+     margin-top: 15.8%;
+ }
