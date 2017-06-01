@@ -19,7 +19,8 @@ a{
     display: block;
 }
 .content{
-height: 100em;
+    height: 100em;
+    width: 100%;
 }
 .anchor{
     background: url("../resources/img/ArrowUp.png");
@@ -27,7 +28,7 @@ height: 100em;
     width: 30px;
     height: 30px;
     position: fixed;
-    margin: 40% 0 0 84%;
+    margin: 35% 0 0 65.7%;
 }
 .PhotoLogo{
     margin: 10px;
