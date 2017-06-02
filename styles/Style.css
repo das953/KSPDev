@@ -28,7 +28,13 @@ a{
     width: 30px;
     height: 30px;
     position: fixed;
-    margin: 35% 0 0 65.7%;
+    margin: 25% 0 0 65.7%;
+}
+.anchorImg{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    margin: 0 50% 50% 0;
 }
 .PhotoLogo{
     margin: 10px;
