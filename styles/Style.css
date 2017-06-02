@@ -22,13 +22,19 @@ a{
     height: 100em;
     width: 100%;
 }
-.anchor{
+.anchor {
     background: url("../resources/img/ArrowUp.png");
     background-size: cover;
     width: 30px;
     height: 30px;
     position: fixed;
     margin: 25% 0 0 65.7%;
+}
+.anchorImg{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    margin: 0 50% 50% 0;
 }
 .PhotoLogo{
     margin: 10px;
