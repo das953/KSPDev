@@ -52,3 +52,9 @@ a{
      float: left;
      margin-top: 15.8%;
  }
+
+ .themeLine{
+     background-color: #a8d08d;
+     font-size: 25px;
+     font-weight: bold;
+ }
