@@ -17,8 +17,9 @@ a {
 .dropMenu > li{
     padding-bottom: 10px;
     margin-top: 1px;
-    font-size: 18px;
-    background: silver;
+    font-size: 14px;
+    background: lightcyan;
+    width: 550px;
     border: 1px solid black;
 }
 .flex-container{
