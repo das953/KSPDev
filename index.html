@@ -4,30 +4,39 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="styles/Style.css">
-    <script src="jquery-3.2.1.min%20.js"></script>
+    <script src="scripts/jquery-3.2.1.min%20.js"></script>
     <script src="scripts/logic.js"></script>
 </head>
 <body>
-<div style="display: inline-flex; flex-direction: column; min-width: 100%;">
-    <div class="flex-container"><!--Header-->
-        <div class="flex-item">
+
+<div id="Header"><!--Header-->
+
+
+<div style="display: inline-flex; flex-direction: row; min-width: 100%">
+    <div class="flex-container">
+        <div class="flex-item" style="margin: 0">
             <div class="PhotoLogo"></div>
         </div>
-        <div class="flex-item  flex-item-Text">
+        <div class="flex-item flex-item-Text" style="margin: 5% 10% 5% 10%">
             <div class="flex-decoration_text">
-                Краткое описание
+                На основании накопленного опыта и многих пожеланий наших клиентов, был разработан программный продукт «VMS-Veneer Management System».
+                VMS содержит полный набор инструментов для производства, оптовой и розничной торговли шпоном и сопутствующими товарами
             </div>
         </div>
-        <div class="flex-item flex-item-btn">
-            <div>
+
+        <div class="flex-item flex-item-btn" style="margin-left: 5%">
                 <button>UA</button>
+        </div>
+            <div class="flex-item flex-item-btn" style="margin-left: 1%; margin-right:  3%">
                 <button>RU</button>
             </div>
 
-        </div>
+
     </div>
-    <div class="flex-container"><!--Header location(navbar)-->
-        <div class="flex-navigation">
+</div>
+
+    <div class="flex-container" style="min-width: 100%; "><!--Header location(navbar)-->
+        <div class="flex-navigation" style="min-width: 100%; background-color: lightgray; justify-content: center; margin-left: 0">
             <div class="flex-item">
                 <a href="#">Головна</a>
 
@@ -53,9 +62,13 @@
 
             </div>
         </div>
+
     </div>
-</div>
-<div class="flex-container flex-container_menu_content">
+
+</div><!--Header end-->
+
+
+<div class="flex-container flex-container_menu_content" style="min-height: 350px; flex-direction: column">
     <div class="flex-menu">
         <nav class="menu">
             <ul class="RootMenu">
@@ -92,15 +105,17 @@
         </nav>
     </div><!--Menu-->
     <div class="flex-content">
-        <div id="content" class="content">
-
+        <div id="content" class="content flex-item">
         </div>
     </div>
-    <div>
+
+    <div class="flex-item">
         <img src="resources/img/ArrowUp.png" class="anchorImg">
     </div>
+
 </div>
-<div class="flex-container">
+
+<div class="flex-container"><!--Footer-->
     <div class="flex-item PhotoLogo"></div>
     <div class="flex-item-Text">
         ShponSoftGroupThisGanstaGroupFuckThePollise!!!Bitches

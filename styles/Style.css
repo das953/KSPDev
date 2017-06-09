@@ -105,7 +105,9 @@ a {
     width: 30px;
     height: 30px;
     position: fixed;
-    margin: 43% 0 0 95%;
+    margin-left: 80%;
+    margin-top: 35%;
+
     right: 0px;
     left: 0px;
     bottom:0px;
@@ -113,8 +115,9 @@ a {
 }
 
 .PhotoLogo {
-    background: url("../resources/img/Logo.png");
-    background-size: 100% 100%;
+    background-size: cover;
+    background-image: url("../resources/img/Logo.png");
+
     height: 250px;
         width: 250px;
 
