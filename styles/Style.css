@@ -1,46 +1,129 @@
-.menu{
+.menu {
     position: fixed;
 }
-ul{
+
+ul {
     text-decoration: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
-}/*
-.RootMenu{
+}
+.RootMenu > li{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.dropMenu > li{
+    padding-bottom: 10px;
+    margin-top: 1px;
+    font-size: 18px;
+    background: silver;
+    border: 1px solid black;
+}
+.flex-container{
+    display: inline-flex;
+    min-width: 100%;
+}
+.flex-item{
+    margin: 1.2% 0 1% 2.8%;
+    padding: 0;
+}
+.flex-item-Text{
+    margin: 2.5% 0 0 30%;
+    padding: 0;
+}
+.flex-item-btn{
+    margin: 2.4% 0 0 35%;
+    padding: 0;
+}
+.flex-navigation{
+    display: inline-flex;
+    flex-direction: row;
+    margin: 2% 0 3% 30%;
+}
+.flex-container_menu_content{
+    flex-direction: column;
+}
+.flex-menu{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.flex-content{
+    margin: 0 0 0 10%;
+}
+    /*Menu*/
+.RootMenu > ul {
+    display: flex;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
     position: relative;
-    display: inline-block;
-}*/
-.RootMenu > li > ul{
+}
+.RootMenu > ul > li {
+    display: flex;
+    height: auto;
+    position: relative;
+}
+.RootMenu > ul > li > a {
+    position: relative;
+    display: flex;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2em;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.RootMenu > ul > li:first-child a {
+    border: 0px;
+}
+.dropMenu {
+    position: absolute;
+    top: 15%;
+    left: 100%;
     display: none;
+    width: auto;
 }
-.RootMenu > li:hover ul{
-    display: block;
+.RootMenu > li:hover ul {
+    display: flex;
+    flex-direction: column;
 }
-.content{
-height: 100em;
+.RootMenu > ul > li > ul > li > a {
+    white-space: nowrap;
+    text-transform: none;
+    padding: 5px 20px;
 }
-.anchor{
-    background: url("../resources/img/ArrowUp.png");
-    background-size: cover;
+
+/*The end Menu!*/
+
+
+.anchorImg {
     width: 30px;
     height: 30px;
     position: fixed;
-    margin: 40% 0 0 84%;
+    margin: 43% 0 0 95%;
+    right: 0px;
+    left: 0px;
+    bottom:0px;
+    top:0px;
 }
-.PhotoLogo{
-    margin: 10px;
+
+.PhotoLogo {
     background: url("../resources/img/Logo.png");
     background-size: 100% 100%;
     height: 55px;
-        width: 70px;
-
+    width: 70px;
 }
-.facebook{
+
+.facebook {
     height: 30px;
 }
- .logoText{
-     float: left;
-     margin-top: 15.8%;
- }
+
+.logoText {
+    float: left;
+    margin-top: 15.8%;
+}
