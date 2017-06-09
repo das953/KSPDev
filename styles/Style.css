@@ -142,3 +142,25 @@ a {
     float: left;
     margin-top: 15.8%;
 }
+
+.themeLineNews{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.newsBlock{
+    border: 1px black;
+    background: whitesmoke;
+}
+
+.newsSeparator{
+    background: lightgray;
+    height: 75px;
+    width: 100%;
+}
+
+.newsLink{
+    color: #2e6da4;
+    font-style: oblique;
+}
+

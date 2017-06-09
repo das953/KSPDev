@@ -1,3 +1,21 @@
-function ClickTest() {
-$("#content").load("content/about.html");
+function ClickNav() {
+
+var text = $(window.event.target)[0].innerHTML;
+var content = $("#content");
+switch (text){
+    case "Описание": content.load("content/about.html");
+    break;
+    case "Главная": content.load("content/main.html");
+    break;
+
+    default:
+        break;
 }
+}
+
+
+
+window.onload = function () {
+    $("#content").load("content/main.html");
+};
+
