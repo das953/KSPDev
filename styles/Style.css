@@ -144,18 +144,21 @@ a {
 }
 
 .themeLineNews{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .newsBlock{
-    border: 1px black;
+    border: 1px black solid;
     background: whitesmoke;
+    padding: 20px 5% 20px 5%;
 }
 
 .newsSeparator{
     background: lightgray;
-    height: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
     width: 100%;
 }
 

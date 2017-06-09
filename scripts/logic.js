@@ -15,7 +15,8 @@ switch (text){
 
 
 
-window.onload = function () {
+
+$(document).ready(function () {
     $("#content").load("content/main.html");
-};
+});
 
