@@ -15,7 +15,6 @@ switch (text){
 
 
 
-
 $(document).ready(function () {
     $("#content").load("content/main.html");
 });
