@@ -1,5 +1,5 @@
 .menu {
-    position: fixed;
+    position: static;
 }
 
 ul {
@@ -105,14 +105,29 @@ a {
 .anchorImg {
     width: 30px;
     height: 30px;
-    position: fixed;
-    margin-left: 80%;
-    margin-top: 35%;
+}
 
-    right: 0px;
-    left: 0px;
-    bottom:0px;
-    top:0px;
+.anchor{
+    margin-top: 550px;
+}
+
+.col-first{
+    min-width: 25%;
+    max-width: 25%;
+
+}
+
+.col-second{
+    min-width: 65%;
+    max-width: 65%;
+    margin: 0;
+}
+.col-third{
+    /*min-width: 25%;
+    max-width: 25%;
+    margin: 0  0 0 10%;*/
+
+    margin: 0 0 0 2%;
 }
 
 .PhotoLogo {
@@ -120,7 +135,8 @@ a {
     background-image: url("../resources/img/Logo.png");
 
     height: 250px;
-        width: 250px;
+    max-height: 250px;
+    width: 250px;
 
 }
 
