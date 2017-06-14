@@ -1,20 +1,22 @@
-.menu {
-    position: absolute;
-}
 
 ul {
     text-decoration: none;
+    list-style: none;
 }
 
 a {
     text-decoration: none;
     color: black;
 }
-.RootMenu > li{
+
+/*
+
+.RootMenu > li {
     padding-bottom: 10px;
     font-size: 18px;
 }
-.dropMenu > li{
+
+.dropMenu > li {
     padding-bottom: 10px;
     margin-top: 1px;
     font-size: 14px;
@@ -22,38 +24,924 @@ a {
     width: 550px;
     border: 1px solid black;
 }
-.flex-container{
-    display: inline-flex;
+*/
+@media (min-width: 320px) {
+    .flex-container {
+        display: inline-flex;
+        min-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-item {
+        margin: 0;
+        padding: 0;
+    }
+
+    .col-first {
+        min-width: 25%;
+        max-width: 25%;
+    }
+
+    .PhotoLogo {
+        background-size: cover;
+        background-image: url("../resources/img/Logo.png");
+
+        height: 250px;
+        max-height: 250px;
+        width: 250px;
+        margin: 0 0 0 -60%;
+    }
+
+    .col-second {
+        min-width: 65%;
+        max-width: 65%;
+        margin: 0;
+
+    }
+
+    .flex-item-Text {
+        margin: 0 0 0 0;
+        padding: 0;
+    }
+
+    .flex-decoration_text {
+        margin: 0 0 0 15%;
+    }
+
+    .col-third {
+        /*min-width: 25%;
+        max-width: 25%;
+        margin: 0  0 0 10%;*/
+
+        margin: 0 0 0 -3%;
+    }
+
+    .flex-item-btn {
+        margin: 0;
+        padding: 0;
+    }
+
+    .flex-navigation {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 0 3% 30%;
+    }
+
+    .flex-navigation > .flex-item {
+        padding: 1.2% 0 0 0;
+    }
+
+    .flex-menu {
+        display: flex;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .menu {
+        position: absolute;
+    }
+
+    .RootMenu {
+        display: none;
+    }
+
+    .dropMenu {
+        display: none;
+    }
+
+    .flex-container_menu_content {
+        flex-direction: column;
+    }
+
+    .flex-content {
+        margin: 0 0 0 0;
+    }
+
+    .anchorImg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .facebook {
+        height: 30px;
+    }
+
+    .anchor {
+        margin-top: 550px;
+    }
+
+    .logoText {
+        float: left;
+        margin-top: 15.8%;
+    }
+
+    .themeLine {
+        background-color: #a8d08d;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .logoText {
+        float: left;
+        margin-top: 15.8%;
+    }
+
+    .themeLineNews {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .newsBlock {
+        border: 1px black solid;
+        background: whitesmoke;
+        padding: 20px 5% 20px 5%;
+    }
+
+    .newsSeparator {
+        background: lightgray;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 50px;
+        width: 100%;
+    }
+
+    .newsLink {
+        color: #2e6da4;
+        font-style: oblique;
+    }
+
+    .flex-item-Text > p {
+        font-weight: bold;
+        font-size: 25px;
+        padding-right: 0;
+    }
+
+
+    /*Выпадающая меню Спросить виталика пусть поможет*/
+    /*
+    .RootMenu > li {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .dropMenu > li {
+        padding-bottom: 10px;
+        margin-top: 1px;
+        font-size: 14px;
+        background: lightcyan;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    .RootMenu > ul {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+    }
+
+    .RootMenu > ul > li {
+        display: flex;
+        height: auto;
+        position: relative;
+    }
+
+    .RootMenu > ul > li > a {
+        position: relative;
+        display: flex;
+        height: auto;
+        box-sizing: border-box;
+        font-size: 23px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 1.2em;
+        padding: 10px 15px;
+        text-decoration: none;
+    }
+
+    .RootMenu > ul > li:first-child a {
+        border: 0px;
+    }
+
+    .dropMenu {
+        position: absolute;
+        top: 15%;
+        left: 100%;
+        display: none;
+        width: auto;
+    }
+
+    .RootMenu > li:hover ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .RootMenu > ul > li > ul > li > a {
+        white-space: nowrap;
+        text-transform: none;
+        padding: 5px 20px;
+    }*/
+}
+@media (min-width: 520px) {
+    .flex-container {
+
+        display: inline-flex;
+        min-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-item {
+        margin: 0;
+        padding: 0;
+    }
+
+    .col-first {
+        min-width: 25%;
+        max-width: 25%;
+    }
+
+    .PhotoLogo {
+        background-size: cover;
+        background-image: url("../resources/img/Logo.png");
+
+        height: 250px;
+        max-height: 250px;
+        width: 250px;
+        margin: 0 0 0 -50%;
+    }
+
+    .col-second {
+        min-width: 65%;
+        max-width: 65%;
+        margin: 0;
+
+    }
+
+    .flex-item-Text {
+        margin: 0 0 0 0;
+        padding: 0;
+    }
+
+    .flex-decoration_text {
+        margin: 0 0 0 15%;
+    }
+
+    .col-third {
+        /*min-width: 25%;
+        max-width: 25%;
+        margin: 0  0 0 10%;*/
+
+        margin: 0 0 0 -3%;
+    }
+
+    .flex-item-btn {
+        margin: 0;
+        padding: 0;
+    }
+
+    .flex-navigation {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 0 3% 30%;
+    }
+
+    .flex-navigation > .flex-item {
+        padding: 1.2% 0 0 0;
+    }
+
+    .flex-menu {
+        display: flex;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .menu {
+        position: absolute;
+    }
+
+    .RootMenu {
+        display: none;
+    }
+
+    .dropMenu {
+        display: none;
+    }
+
+    .flex-container_menu_content {
+        flex-direction: column;
+    }
+
+    .flex-content {
+        margin: 0 0 0 0;
+    }
+
+    .anchorImg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .facebook {
+        height: 30px;
+    }
+
+    .anchor {
+        margin-top: 550px;
+    }
+
+    .logoText {
+        float: left;
+        margin-top: 15.8%;
+    }
+
+    .themeLine {
+        background-color: #a8d08d;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .logoText {
+        float: left;
+        margin-top: 15.8%;
+    }
+
+    .themeLineNews {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .newsBlock {
+        border: 1px black solid;
+        background: whitesmoke;
+        padding: 20px 5% 20px 5%;
+    }
+
+    .newsSeparator {
+        background: lightgray;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 50px;
+        width: 100%;
+    }
+
+    .newsLink {
+        color: #2e6da4;
+        font-style: oblique;
+    }
+
+    .flex-item-Text > p {
+        font-weight: bold;
+        font-size: 25px;
+        padding-right: 0;
+    }
+
+
+    /*Выпадающая меню Спросить виталика пусть поможет*/
+    /*
+    .RootMenu > li {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .dropMenu > li {
+        padding-bottom: 10px;
+        margin-top: 1px;
+        font-size: 14px;
+        background: lightcyan;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    .RootMenu > ul {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+    }
+
+    .RootMenu > ul > li {
+        display: flex;
+        height: auto;
+        position: relative;
+    }
+
+    .RootMenu > ul > li > a {
+        position: relative;
+        display: flex;
+        height: auto;
+        box-sizing: border-box;
+        font-size: 23px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 1.2em;
+        padding: 10px 15px;
+        text-decoration: none;
+    }
+
+    .RootMenu > ul > li:first-child a {
+        border: 0px;
+    }
+
+    .dropMenu {
+        position: absolute;
+        top: 15%;
+        left: 100%;
+        display: none;
+        width: auto;
+    }
+
+    .RootMenu > li:hover ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .RootMenu > ul > li > ul > li > a {
+        white-space: nowrap;
+        text-transform: none;
+        padding: 5px 20px;
+    }*/
+}
+@media (min-width: 620px) {
+    .flex-container {
+        display: inline-flex;
+        min-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-item {
+        margin: 0;
+        padding: 0;
+    }
+
+    .col-first {
+        min-width: 25%;
+        max-width: 25%;
+    }
+
+    .PhotoLogo {
+        background-size: cover;
+        background-image: url("../resources/img/Logo.png");
+
+        height: 250px;
+        max-height: 250px;
+        width: 250px;
+        margin: 0 0 0 -35%;
+    }
+
+    .col-second {
+        min-width: 65%;
+        max-width: 65%;
+        margin: 0;
+
+    }
+
+    .flex-item-Text {
+        margin: 0 0 0 0;
+        padding: 0;
+    }
+
+    .flex-decoration_text {
+        margin: 0 0 0 15%;
+    }
+
+    .col-third {
+        /*min-width: 25%;
+        max-width: 25%;
+        margin: 0  0 0 10%;*/
+
+        margin: 0 0 0 -3%;
+    }
+
+    .flex-item-btn {
+        margin: 0;
+        padding: 0;
+    }
+
+    .flex-navigation {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 0 3% 30%;
+    }
+
+    .flex-navigation > .flex-item {
+        padding: 1.2% 0 0 0;
+    }
+
+    .flex-menu {
+        display: flex;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .menu {
+        position: absolute;
+    }
+
+    .RootMenu {
+        display: none;
+    }
+
+    .dropMenu {
+        display: none;
+    }
+
+    .flex-container_menu_content {
+        flex-direction: column;
+    }
+
+    .flex-content {
+        margin: 0 0 0 0;
+    }
+
+    .anchorImg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .facebook {
+        height: 30px;
+    }
+
+    .anchor {
+        margin-top: 550px;
+    }
+
+    .logoText {
+        float: left;
+        margin-top: 15.8%;
+    }
+
+    .themeLine {
+        background-color: #a8d08d;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .logoText {
+        float: left;
+        margin-top: 15.8%;
+    }
+
+    .themeLineNews {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .newsBlock {
+        border: 1px black solid;
+        background: whitesmoke;
+        padding: 20px 5% 20px 5%;
+    }
+
+    .newsSeparator {
+        background: lightgray;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 50px;
+        width: 100%;
+    }
+
+    .newsLink {
+        color: #2e6da4;
+        font-style: oblique;
+    }
+
+    .flex-item-Text > p {
+        font-weight: bold;
+        font-size: 25px;
+        padding-right: 0;
+    }
+
+
+    /*Выпадающая меню Спросить виталика пусть поможет*/
+    /*
+    .RootMenu > li {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .dropMenu > li {
+        padding-bottom: 10px;
+        margin-top: 1px;
+        font-size: 14px;
+        background: lightcyan;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    .RootMenu > ul {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+    }
+
+    .RootMenu > ul > li {
+        display: flex;
+        height: auto;
+        position: relative;
+    }
+
+    .RootMenu > ul > li > a {
+        position: relative;
+        display: flex;
+        height: auto;
+        box-sizing: border-box;
+        font-size: 23px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 1.2em;
+        padding: 10px 15px;
+        text-decoration: none;
+    }
+
+    .RootMenu > ul > li:first-child a {
+        border: 0px;
+    }
+
+    .dropMenu {
+        position: absolute;
+        top: 15%;
+        left: 100%;
+        display: none;
+        width: auto;
+    }
+
+    .RootMenu > li:hover ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .RootMenu > ul > li > ul > li > a {
+        white-space: nowrap;
+        text-transform: none;
+        padding: 5px 20px;
+    }*/
+}
+@media (min-width: 720px) {
+    .flex-container {
+        display: inline-flex;
+        min-width: 100%;
+        flex-direction: row;
+    }
+
+    .flex-item {
+        margin: 0;
+        padding: 0;
+    }
+
+    .col-first {
+        min-width: 25%;
+        max-width: 25%;
+    }
+
+    .PhotoLogo {
+        background-size: cover;
+        background-image: url("../resources/img/Logo.png");
+
+        height: 250px;
+        max-height: 250px;
+        width: 250px;
+        margin: 0 0 0 0;
+    }
+
+    .col-second {
+        min-width: 65%;
+        max-width: 65%;
+        margin: 0;
+
+    }
+
+    .flex-item-Text {
+        margin: 0 0 0 0;
+        padding: 0;
+    }
+
+    .flex-decoration_text {
+        margin: 0 0 0 15%;
+    }
+
+    .col-third {
+        /*min-width: 25%;
+        max-width: 25%;
+        margin: 0  0 0 10%;*/
+
+        margin: 0 0 0 -3%;
+    }
+
+    .flex-item-btn {
+        margin: 0;
+        padding: 0;
+    }
+
+    .flex-navigation {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 5% 0 3% 30%;
+    }
+
+    .flex-navigation > .flex-item {
+        padding: 1.5% 0 1.5% 0;
+        margin: 0 0 0 3%;
+    }
+
+    .flex-menu {
+        display: flex;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .menu {
+        position: absolute;
+    }
+
+    .RootMenu {
+        display: none;
+    }
+
+    .dropMenu {
+        display: none;
+    }
+
+    .flex-container_menu_content {
+        flex-direction: column;
+    }
+
+    .flex-content {
+        margin: 0 0 0 0;
+    }
+
+    .anchorImg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .facebook {
+        height: 30px;
+    }
+
+    .anchor {
+        margin-top: 550px;
+    }
+
+    .logoText {
+        float: left;
+        margin-top: 15.8%;
+    }
+
+    .themeLine {
+        background-color: #a8d08d;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .logoText {
+        float: left;
+        margin-top: 15.8%;
+    }
+
+    .themeLineNews {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .newsBlock {
+        border: 1px black solid;
+        background: whitesmoke;
+        padding: 20px 5% 20px 5%;
+    }
+
+    .newsSeparator {
+        background: lightgray;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 50px;
+        width: 100%;
+    }
+
+    .newsLink {
+        color: #2e6da4;
+        font-style: oblique;
+    }
+
+    .flex-item-Text > p {
+        font-weight: bold;
+        font-size: 25px;
+        padding-right: 0;
+    }
+
+
+    /*Выпадающая меню Спросить виталика пусть поможет*/
+    /*
+    .RootMenu > li {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .dropMenu > li {
+        padding-bottom: 10px;
+        margin-top: 1px;
+        font-size: 14px;
+        background: lightcyan;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    .RootMenu > ul {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+    }
+
+    .RootMenu > ul > li {
+        display: flex;
+        height: auto;
+        position: relative;
+    }
+
+    .RootMenu > ul > li > a {
+        position: relative;
+        display: flex;
+        height: auto;
+        box-sizing: border-box;
+        font-size: 23px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 1.2em;
+        padding: 10px 15px;
+        text-decoration: none;
+    }
+
+    .RootMenu > ul > li:first-child a {
+        border: 0px;
+    }
+
+    .dropMenu {
+        position: absolute;
+        top: 15%;
+        left: 100%;
+        display: none;
+        width: auto;
+    }
+
+    .RootMenu > li:hover ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .RootMenu > ul > li > ul > li > a {
+        white-space: nowrap;
+        text-transform: none;
+        padding: 5px 20px;
+    }*/
+}
+
+.Forum{
+    display: flex;
+    flex-direction: column;
     min-width: 100%;
 }
-.flex-item{
-    margin: 1.2% 0 1% 2.8%;
+.Forum-Tems{
+    margin: 0 0 0 3%;
     padding: 0;
 }
-.flex-item-Text{
-    margin: 2.5% 0 0 30%;
-    padding: 0;
-}
-.flex-item-btn{
-    margin: 2.4% 0 0 35%;
-    padding: 0;
-}
-.flex-navigation{
-    display: inline-flex;
-    flex-direction: row;
-    margin: 2% 0 3% 30%;
-}
-.flex-container_menu_content{
+.Forum_ans{
+    display: flex;
     flex-direction: column;
 }
-.flex-menu{
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+.Quest_name{
+    width: 13%;
+    margin-bottom: 0.7%;
 }
-.flex-content{
-    margin: 0 0 0 10%;
+.Quest_text{
+    width: 30%;
+    height:auto;
+    margin-bottom: 0.7%;
 }
-    /*Menu*/
+/*
+
+
+
+!*Menu*!
 .RootMenu > ul {
     display: flex;
     height: auto;
@@ -62,11 +950,13 @@ a {
     list-style: none;
     position: relative;
 }
+
 .RootMenu > ul > li {
     display: flex;
     height: auto;
     position: relative;
 }
+
 .RootMenu > ul > li > a {
     position: relative;
     display: flex;
@@ -79,9 +969,11 @@ a {
     padding: 10px 15px;
     text-decoration: none;
 }
+
 .RootMenu > ul > li:first-child a {
     border: 0px;
 }
+
 .dropMenu {
     position: absolute;
     top: 15%;
@@ -89,98 +981,21 @@ a {
     display: none;
     width: auto;
 }
+
 .RootMenu > li:hover ul {
     display: flex;
     flex-direction: column;
 }
+
 .RootMenu > ul > li > ul > li > a {
     white-space: nowrap;
     text-transform: none;
     padding: 5px 20px;
 }
 
-/*The end Menu!*/
+!*The end Menu!*!
 
 
-.anchorImg {
-    width: 30px;
-    height: 30px;
-}
 
-.anchor{
-    margin-top: 550px;
-}
 
-.col-first{
-    min-width: 25%;
-    max-width: 25%;
-
-}
-
-.col-second{
-    min-width: 65%;
-    max-width: 65%;
-    margin: 0;
-
-}
-.col-third{
-    /*min-width: 25%;
-    max-width: 25%;
-    margin: 0  0 0 10%;*/
-
-    margin: 0 0 0 2%;
-}
-
-.PhotoLogo {
-    background-size: cover;
-    background-image: url("../resources/img/Logo.png");
-
-    height: 250px;
-    max-height: 250px;
-    width: 250px;
-
-}
-
-.facebook {
-    height: 30px;
-}
- .logoText{
-     float: left;
-     margin-top: 15.8%;
- }
-
- .themeLine{
-     background-color: #a8d08d;
-     font-size: 25px;
-     font-weight: bold;
- }
-
-.logoText {
-    float: left;
-    margin-top: 15.8%;
-}
-
-.themeLineNews{
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.newsBlock{
-    border: 1px black solid;
-    background: whitesmoke;
-    padding: 20px 5% 20px 5%;
-}
-
-.newsSeparator{
-    background: lightgray;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 50px;
-    width: 100%;
-}
-
-.newsLink{
-    color: #2e6da4;
-    font-style: oblique;
-}
-
+*/
