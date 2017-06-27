@@ -10,7 +10,7 @@ function getForumContent() {
     var html =
         "<div onclick='getQuestForum()' class='Text_item_forum'>" +
         temp +
-        "<a href='#'>Возможно ли какать золотом?</a>" +
+        "<a href='#'>Test forum</a>" +
         " </div> ";
     return html;
 }

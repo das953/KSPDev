@@ -6,6 +6,35 @@
     <link rel="stylesheet" href="../styles/Style.css">
 </head>
 <body>
+
+<?php
+    $servername = "localhost";
+    $username = "u_vmsystem";
+    $password = "CDMlVzMf";
+    $dbname = "vmsystem";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT ID, NickName, Role FROM USERS";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+// output data of each row
+while($row = $result->fetch_assoc()) {
+echo "id: " . $row["ID"]. " - Name: " . $row["NickName"]. " - Role:  " . $row["Role"]. "<br>";
+}
+} else {
+echo "0 results";
+}
+
+$conn->close();
+?>
+
 <div style="display: inline-flex; flex-direction: column; min-width: 80%; max-width: 80%; margin: 0">
     <div class="themeLine flex-content" style="margin-left: 0;"><div class="flex-item" style="text-align: center">ОСНОВНЫЕ ФУНКЦИИ VMS :</div></div>
     <div>

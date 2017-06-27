@@ -751,6 +751,7 @@ a {
     .col-first {
         min-width: 25%;
         max-width: 25%;
+        position: relative;
     }
 
     .PhotoLogo {
@@ -767,6 +768,7 @@ a {
         min-width: 65%;
         max-width: 65%;
         margin: 0;
+        position: relative;
 
     }
 

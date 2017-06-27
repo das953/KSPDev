@@ -13,45 +13,45 @@
 <div id="Header"><!--Header-->
 
 
-<div style="display: inline-flex; flex-direction: row; ">
-    <div class="flex-container">
-        <div class="flex-item col-first" style="margin: 0">
-            <div class="PhotoLogo"></div>
-        </div>
-        <div class="flex-item flex-item-Text col-second">
-            <div class="flex-decoration_text" style="text-align: center; font-size: 20px;padding: 8.5% 15% 0 0">
-                На основании накопленного опыта и многих пожеланий наших клиентов, был разработан программный продукт «VMS-Veneer Management System».
-                VMS содержит полный набор инструментов для производства, оптовой и розничной торговли шпоном и сопутствующими товарами.
+    <div style="display: inline-flex; flex-direction: row; ">
+        <div class="flex-container">
+            <div class="flex-item col-first" style="margin: 0">
+                <div class="PhotoLogo"></div>
             </div>
-        </div>
-
-        <div class="col-third" style="display: inline-flex; margin-top: 5%">
-            <div class="flex-item flex-item-btn" style="margin-left: 5%">
-                <button>UA</button>
+            <div class="flex-item flex-item-Text col-second">
+                <div class="flex-decoration_text" style="text-align: center; font-size: 20px;padding: 8.5% 15% 0 0">
+                    На основании накопленного опыта и многих пожеланий наших клиентов, был разработан программный продукт «VMS-Veneer Management System».
+                    VMS содержит полный набор инструментов для производства, оптовой и розничной торговли шпоном и сопутствующими товарами.
+                </div>
             </div>
-            <div class="flex-item flex-item-btn" style="margin-left: 1%; margin-right:  3%">
-                <button>RU</button>
+
+            <div class="col-third" style="display: inline-flex; margin-top: 5%">
+                <div class="flex-item flex-item-btn" style="margin-left: 5%">
+                    <button>UA</button>
+                </div>
+                <div class="flex-item flex-item-btn" style="margin-left: 1%; margin-right:  3%">
+                    <button>RU</button>
+                </div>
             </div>
+
+
+
         </div>
-
-
-
     </div>
-</div>
 
     <div class="flex-container" ><!--Header location(navbar)-->
         <div class="flex-navigation" style="min-width: 100%; background-color: lightgray; justify-content: center; margin-left: 0">
 
             <div class="flex-item ">
-                <a href="#main.html" class="history" onclick="ClickNav()">Главная</a>
+                <a href="#main.php" class="history" onclick="ClickNav()">Главная</a>
 
             </div>
             <div class="flex-item history">
-                <a href="#about.html" class="history"  onclick="ClickNav()">Описание</a>
+                <a href="#about.php" class="history"  onclick="ClickNav()">Описание</a>
 
             </div>
             <div class="flex-item history">
-                <a href="#equipment.html" onclick="ClickNav()"  class="history">Оборудование</a>
+                <a href="#equipment.php" onclick="ClickNav()"  class="history">Оборудование</a>
 
             </div>
             <div class="flex-item history">

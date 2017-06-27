@@ -21,6 +21,7 @@ function getContent(url, addEntry, reload) {
 
         if (url != undefined) {
             content.load("content/" + url.substring(1));
+
         }
         if (addEntry == true) {
             history.pushState(null, null, url);

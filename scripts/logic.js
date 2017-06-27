@@ -4,13 +4,13 @@ function ClickNav() {
     var content = $("#content");
     switch (text) {
         case "Описание":
-            content.load("content/about.html");
+            content.load("content/about.php");
             break;
         case "Главная":
-            content.load("content/main.html");
+            content.load("content/main.php");
             break;
         case "Оборудование":
-            content.load("content/equipment.html");
+            content.load("content/equipment.php");
             break;
         case "Статьи":
             content.load("content/state.html");
@@ -28,7 +28,7 @@ function ClickNav() {
 
 
 $(document).ready(function () {
-    $("#content").load("content/main.html");
+    $("#content").load("content/main.php");
 });
 
 function SkrollAnchor() {
