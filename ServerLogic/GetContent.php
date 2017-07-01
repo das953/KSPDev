@@ -5,7 +5,7 @@
  * Date: 01.07.2017
  * Time: 3:34
  */
-function GetData($lang){
+function GetData($lang, $type){
 
 
     $servername = "localhost";
@@ -23,9 +23,10 @@ function GetData($lang){
 
     $sql =              "SELECT Content_Blocks.Header, Content_Blocks.Content, Localizations.Lang_Name
                          FROM Content_Blocks
-                         INNER JOIN Localizations
-                         ON Content_Blocks.LocalizationID = Localizations.ID 
-                         WHERE  Localizations.Lang_Name = " . '"' . $lang . '"';
+                         INNER JOIN Localizations ON Content_Blocks.LocalizationID = Localizations.ID 
+                         INNER JOIN Types ON Content_Blocks.TypeID = Types.ID
+                         WHERE  Localizations.Lang_Name = " . '"' . $lang . '"' .
+                         "AND Types.Description = " . '"' . $type . '"';
 //TODO допилити запит, щоб перевірявся тип контенту
     $result = $conn->query($sql);
     $res = array();

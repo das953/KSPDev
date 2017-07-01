@@ -11,7 +11,7 @@
 
 
 include '../ServerLogic/GetContent.php';
-$data = GetData('RU');
+$data = GetData('RU', 'About');
 
     foreach ($data as &$value){
     echo $value;
