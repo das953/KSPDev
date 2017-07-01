@@ -20,6 +20,7 @@ function getContent(url, addEntry, reload) {
     $.get(url).done(function (data) {
 
         if (url != undefined) {
+            console.log(url.substring(1));
             content.load("content/" + url.substring(1));
 
         }

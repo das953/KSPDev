@@ -10,6 +10,8 @@
 </head>
 <body>
 
+
+
 <div id="Header"><!--Header-->
 
 
@@ -47,11 +49,11 @@
 
             </div>
             <div class="flex-item history">
-                <a href="#about.php" class="history"  onclick="ClickNav()">Описание</a>
+                <a href="#aboutRU.php" class="history"  onclick="ClickNav()">Описание</a>
 
             </div>
             <div class="flex-item history">
-                <a href="#equipment.php" onclick="ClickNav()"  class="history">Оборудование</a>
+                <a href="#equipmentUA.php" onclick="ClickNav()"  class="history">Оборудование</a>
 
             </div>
             <div class="flex-item history">

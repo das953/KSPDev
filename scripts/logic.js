@@ -1,16 +1,20 @@
 function ClickNav() {
 
+    <!--TODO
+зробити апішку чз аякс, щоб вона запити відправляла на контент з вже відповідною мовою
+-->
+
     var text = $(window.event.target)[0].innerHTML;
     var content = $("#content");
     switch (text) {
         case "Описание":
-            content.load("content/about.php");
+            content.load("content/aboutRU.php");
             break;
         case "Главная":
             content.load("content/main.php");
             break;
         case "Оборудование":
-            content.load("content/equipment.php");
+            content.load("content/equipmentUA.php");
             break;
         case "Статьи":
             content.load("content/state.html");
