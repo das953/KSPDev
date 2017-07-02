@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script src="scripts/test.js"></script>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <script src="scripts/AdminLogic.js"></script>
+    <script src="scripts/jquery-3.2.1.min%20.js"></script>
+    <link href="styles/adminStyle.css" rel="stylesheet">
 </head>
+<body>
+<form name="adminform">
+    <p>
+        <input type="hidden" id="content" name="content" value="">
+    </p>
 
-<body ng-app="myApp">
-<div ng-controller="MessageController">
-    <button type="button" ng-click="getMessage()">Click</button>
-    Delayed Message: {{message}}
-
-</div>
+    <p>
+        <input type="submit" value="Отправить" onclick="save()">
+    </p>
+</form>
 </body>
 </html>

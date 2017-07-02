@@ -1,0 +1,25 @@
+.admin-container{
+    display: flex;
+    min-width: 100%;
+    flex-direction: row;
+}
+.admin-item{
+    margin: 0 1% 0 0;
+    padding: 1%;
+}
+.item{
+    margin-left: 0.5%;
+}
+.sizeinp{
+    width: 5%;
+}
+.frame-container{
+    display: flex;
+    min-width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+#frameId{
+    width: 50%;
+    height: 5em;
+}

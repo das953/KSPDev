@@ -4,13 +4,13 @@ function ClickNav() {
     var content = $("#content");
     switch (text) {
         case "Описание":
-            content.load("content/aboutRU.php");
+            content.load("content/about.html");
             break;
         case "Главная":
-            content.load("content/main.php");
+            content.load("content/main.html");
             break;
         case "Оборудование":
-            content.load("content/equipmentUA.php");
+            content.load("content/equipment.html");
             break;
         case "Статьи":
             content.load("content/state.html");
@@ -40,11 +40,17 @@ window.onscroll = function () {
     /*$(".RootMenu").css("margin-top",topcount + '%');*/
     if (scrolled >= 587) {
         $(".RootMenu").css("top", 53 + '%');
-        $(".anchorImg").css("display",'flex');
+        $(".anchorImg").css("display", 'flex');
     }
     if (scrolled <= 100) {
         $(".RootMenu").css("top", 58 + '%');
-        $(".anchorImg").css("display",'none');
+        $(".anchorImg").css("display", 'none');
 
     }
 };
+
+
+function OnClickMenu() {
+    var content = $("#content");
+    content.load("UA/content/comand.html");
+}
