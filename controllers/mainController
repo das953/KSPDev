@@ -1,19 +1,29 @@
 
 angular.module('myApp',[])
-    .controller('mainController', function($scope) {
+    .controller('langController',['$scope', function($scope) {
 
-        $scope.getMessage = function() {
 
-            /*        $scope.$apply(function() {
-             //wrapped this within $apply
-             $scope.message = 'Fetched after 3 seconds';
-             $scope.console.log("TTT");
-             });*/
+        $scope.lang = "UA";
+        $scope.sayHello = function (lang) {
+            if(lang)
+                $scope.lang = lang;
+            if($scope.lang == "UA"){
+                $scope.description = "Hello world!";
+            }
+            else {
+                $scope.description = "bye world!";
+            }
 
-            $scope.message = 'Fetched after 3 seconds';
-            console.log("TTT");
+
+            console.log("aaa");
+
+
         };
 
-        /*$scope.getMessage();*/
 
-    });
+
+        $scope.sayHello();
+
+
+
+    }]);

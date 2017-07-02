@@ -1,9 +1,5 @@
 function ClickNav() {
 
-    <!--TODO
-зробити апішку чз аякс, щоб вона запити відправляла на контент з вже відповідною мовою
--->
-
     var text = $(window.event.target)[0].innerHTML;
     var content = $("#content");
     switch (text) {
