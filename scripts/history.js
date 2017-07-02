@@ -20,7 +20,7 @@ function getContent(url, addEntry, reload) {
     $.get(url).done(function (data) {
 
         if (url != undefined) {
-            content.load("content/" + url.substring(1));
+            content.load("RU/content/" + url.substring(1));
         }
         if (addEntry == true) {
             history.pushState(null, null, url);
@@ -29,7 +29,7 @@ function getContent(url, addEntry, reload) {
 
     });
     if (reload == true) {
-        content.load("content/" + url);
+        content.load("RU/content/" + url);
     }
 }
 function getUrl(url) {

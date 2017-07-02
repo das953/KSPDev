@@ -1,8 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <script src="scripts/AdminLogic.js"></script>
+    <script src="scripts/jquery-3.2.1.min%20.js"></script>
+    <link href="styles/adminStyle.css" rel="stylesheet">
 </head>
 <body>
+<form name="adminform">
+    <p>
+        <input type="hidden" id="content" name="content" value="">
+    </p>
+
+    <p>
+        <input type="submit" value="Отправить" onclick="save()">
+    </p>
+</form>
 </body>
 </html>
