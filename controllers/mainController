@@ -1,0 +1,19 @@
+
+angular.module('myApp',[])
+    .controller('mainController', function($scope) {
+
+        $scope.getMessage = function() {
+
+            /*        $scope.$apply(function() {
+             //wrapped this within $apply
+             $scope.message = 'Fetched after 3 seconds';
+             $scope.console.log("TTT");
+             });*/
+
+            $scope.message = 'Fetched after 3 seconds';
+            console.log("TTT");
+        };
+
+        /*$scope.getMessage();*/
+
+    });

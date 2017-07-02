@@ -26,13 +26,13 @@ function GetData($lang, $type){
                          INNER JOIN Localizations ON Content_Blocks.LocalizationID = Localizations.ID 
                          INNER JOIN Types ON Content_Blocks.TypeID = Types.ID
                          WHERE  Localizations.Lang_Name = " . '"' . $lang . '"' .
-                         "AND Types.Description = " . '"' . $type . '"';
-//TODO допилити запит, щоб перевірявся тип контенту
+                        "AND Types.Description = " . '"' . $type . '"';
+
     $result = $conn->query($sql);
     $res = array();
 
     if ($result->num_rows > 0) {
-// output data of each row
+    //  data of each row
 
 
         while($row = $result->fetch_assoc()) {
