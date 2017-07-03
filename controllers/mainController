@@ -2,28 +2,20 @@
 angular.module('myApp',[])
     .controller('langController',['$scope', function($scope) {
 
-
-        $scope.lang = "UA";
         $scope.sayHello = function (lang) {
-            if(lang)
-                $scope.lang = lang;
-            if($scope.lang == "UA"){
-                $scope.description = "Hello world!";
-            }
-            else {
-                $scope.description = "bye world!";
-            }
 
-
-            console.log("aaa");
-
+                $.getJSON( "data/lang" + lang + ".json", function( data, err) {
+                })
+                    .done(function(data) {
+                        $scope.lang = lang;
+                        $scope.description = data["description"];
+                        $scope.$apply();
+                    })
+                    .fail(function(jqXHR, textStatus) { console.log('getJSON request failed! ' + textStatus + '! incorrect ' +
+                        'language ' + lang); })
 
         };
 
-
-
-        $scope.sayHello();
-
-
+        $scope.sayHello('RU');
 
     }]);

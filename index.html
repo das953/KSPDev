@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <title>VMS</title>
@@ -12,20 +12,20 @@
     <script src="controllers/mainController"></script>
 
 </head>
-<body  ng-app="myApp">
+<body ng-controller="langController" >
 
 
 
 <div id="Header"><!--Header-->
 
 
-    <div style="display: inline-flex; flex-direction: row; "  ng-controller="langController">
+    <div style="display: inline-flex; flex-direction: row; width: 100%" >
         <div class="flex-container">
             <div class="flex-item col-first" style="margin: 0">
                 <div class="PhotoLogo"></div>
             </div>
             <div class="flex-item flex-item-Text col-second">
-                <div class="flex-decoration_text" style="text-align: center; font-size: 20px;padding: 8.5% 15% 0 0" >
+                <div class="flex-decoration_text" style="text-align: center; font-size: 20px;padding: 8.5% 5% 0 7% ; margin: 0" >
                 {{description}}
                 </div>
             </div>
@@ -48,27 +48,27 @@
         <div class="flex-navigation" style="min-width: 100%; background-color: lightgray; justify-content: center; margin-left: 0">
 
             <div class="flex-item ">
-                <a href="#main.php" class="history" onclick="ClickNav()">Главная</a>
+                <a href="#news.php?lang={{lang}}&type=News" class="history" onclick="ClickNav()">Главная</a>
 
             </div>
             <div class="flex-item history">
-                <a href="#aboutRU.php" class="history"  onclick="ClickNav()">Описание</a>
+                <a href="#about.php?lang={{lang}}&type=About" class="history"  onclick="ClickNav()">Описание</a>
 
             </div>
             <div class="flex-item history">
-                <a href="#equipmentUA.php" onclick="ClickNav()"  class="history">Оборудование</a>
+                <a href="#equipment.php?lang={{lang}}&type=Equipment" onclick="ClickNav()"  class="history">Оборудование</a>
 
             </div>
             <div class="flex-item history">
-                <a href="#state.html" onclick="ClickNav()" class="history">Статьи</a>
+                <a href="#articles.html?lang={{lang}}&type=Article" onclick="ClickNav()" class="history">Статьи</a>
 
             </div>
             <div class="flex-item history">
-                <a href="#forum.html" onclick="ClickNav()" class="history">Форум</a>
+                <a href="#forum.html?lang={{lang}}&type=Forum" onclick="ClickNav()" class="history">Форум</a>
 
             </div>
             <div class="flex-item history">
-                <a href="#partners.html" class="history" onclick="ClickNav()">Партнеры</a>
+                <a href="#partners.html?lang={{lang}}&type=Partners" class="history" onclick="ClickNav()">Партнеры</a>
 
             </div>
         </div>
@@ -86,7 +86,7 @@
                     <span>Наша команда</span>
                     <ul class="RootMenu">
                         <li  onclick="OnClickMenu()">
-                            <span>Наша команда</span>
+                            <a href="#aboutUs" onclick="OnClickMenu()" class="history">Наша команда</a>
                         </li>
                         <li><span>Галузь роботи</span>
                         </li>
@@ -128,7 +128,7 @@
         </div>
     </div><!--Content-->
 
-    <div class="flex-item col-third" style="align-self: flex-end">
+    <div class="flex-item col-third" style="align-self: flex-end;">
         <img src="resources/img/ArrowUp.png" onclick="SkrollAnchor()" class="anchorImg">
     </div>
 
@@ -138,10 +138,10 @@
     <div class="flex-item col-first" style="margin: 0">
         <div class="PhotoLogo"></div>
     </div>
-    <div class="flex-item-Text col-second" style="margin-top: 9%;text-align: center">
+    <div class="flex-item-Text col-second" style="margin-top: 8%;text-align: center">
         <p>KSPDev</p>
     </div>
-    <div class="flex-item col-third" style="margin-top: 10%"> <!--style="margin-top: 5%;margin-left: 32.2%"-->
+    <div class="flex-item col-third" style="margin-top: 7%"> <!--style="margin-top: 5%;margin-left: 32.2%"-->
         <a href="http://facebook.com"><img class="facebook" src="resources/img/FB.png"></a>
     </div>
 </div><!--Footer end-->

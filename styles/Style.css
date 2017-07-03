@@ -16,14 +16,18 @@ a {
         align-items: center;
     }
 
+    .content{
+        text-align: center;
+    }
+
     .flex-item {
         margin: 0;
         padding: 0;
     }
 
     .col-first {
-        min-width: 25%;
-        max-width: 25%;
+        min-width: 20%;
+        max-width: 20%;
     }
 
     .PhotoLogo {
@@ -37,8 +41,8 @@ a {
     }
 
     .col-second {
-        min-width: 65%;
-        max-width: 65%;
+        min-width: 60%;
+        max-width: 60%;
         margin: 0;
 
     }
@@ -53,11 +57,9 @@ a {
     }
 
     .col-third {
-        /*min-width: 25%;
-        max-width: 25%;
-        margin: 0  0 0 10%;*/
-
-        margin: 0 0 0 -3%;
+        min-width: 20%;
+        max-width: 20%;
+        margin: 0;
     }
 
     .flex-item-btn {
@@ -181,73 +183,6 @@ a {
         padding-right: 0;
     }
 
-    /*Выпадающая меню Спросить виталика пусть поможет*/
-    /*
-    .RootMenu > li {
-        padding-bottom: 10px;
-        font-size: 18px;
-    }
-
-    .dropMenu > li {
-        padding-bottom: 10px;
-        margin-top: 1px;
-        font-size: 14px;
-        background: lightcyan;
-        width: 100%;
-        border: 1px solid black;
-    }
-
-    .RootMenu > ul {
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        position: relative;
-    }
-
-    .RootMenu > ul > li {
-        display: flex;
-        height: auto;
-        position: relative;
-    }
-
-    .RootMenu > ul > li > a {
-        position: relative;
-        display: flex;
-        height: auto;
-        box-sizing: border-box;
-        font-size: 23px;
-        text-transform: uppercase;
-        font-weight: bold;
-        line-height: 1.2em;
-        padding: 10px 15px;
-        text-decoration: none;
-    }
-
-    .RootMenu > ul > li:first-child a {
-        border: 0px;
-    }
-
-    .dropMenu {
-        position: absolute;
-        top: 15%;
-        left: 100%;
-        display: none;
-        width: auto;
-    }
-
-    .RootMenu > li:hover ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .RootMenu > ul > li > ul > li > a {
-        white-space: nowrap;
-        text-transform: none;
-        padding: 5px 20px;
-    }*/
 }
 
 @media (max-width: 520px) {
@@ -259,16 +194,19 @@ a {
         align-items: center;
     }
 
+    .content{
+        text-align: center;
+    }
+
     .flex-item {
         margin: 0;
         padding: 0;
     }
 
     .col-first {
-        min-width: 25%;
-        max-width: 25%;
+        min-width: 20%;
+        max-width: 20%;
     }
-
     .PhotoLogo {
         background-size: cover;
         background-image: url("../resources/img/Logo.png");
@@ -280,8 +218,8 @@ a {
     }
 
     .col-second {
-        min-width: 65%;
-        max-width: 65%;
+        min-width: 60%;
+        max-width: 60%;
         margin: 0;
 
     }
@@ -296,11 +234,9 @@ a {
     }
 
     .col-third {
-        /*min-width: 25%;
-        max-width: 25%;
-        margin: 0  0 0 10%;*/
-
-        margin: 0 0 0 -3%;
+        min-width: 20%;
+        max-width: 20%;
+        margin: 0;
     }
 
     .flex-item-btn {
@@ -424,73 +360,6 @@ a {
         padding-right: 0;
     }
 
-    /*Выпадающая меню Спросить виталика пусть поможет*/
-    /*
-    .RootMenu > li {
-        padding-bottom: 10px;
-        font-size: 18px;
-    }
-
-    .dropMenu > li {
-        padding-bottom: 10px;
-        margin-top: 1px;
-        font-size: 14px;
-        background: lightcyan;
-        width: 100%;
-        border: 1px solid black;
-    }
-
-    .RootMenu > ul {
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        position: relative;
-    }
-
-    .RootMenu > ul > li {
-        display: flex;
-        height: auto;
-        position: relative;
-    }
-
-    .RootMenu > ul > li > a {
-        position: relative;
-        display: flex;
-        height: auto;
-        box-sizing: border-box;
-        font-size: 23px;
-        text-transform: uppercase;
-        font-weight: bold;
-        line-height: 1.2em;
-        padding: 10px 15px;
-        text-decoration: none;
-    }
-
-    .RootMenu > ul > li:first-child a {
-        border: 0px;
-    }
-
-    .dropMenu {
-        position: absolute;
-        top: 15%;
-        left: 100%;
-        display: none;
-        width: auto;
-    }
-
-    .RootMenu > li:hover ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .RootMenu > ul > li > ul > li > a {
-        white-space: nowrap;
-        text-transform: none;
-        padding: 5px 20px;
-    }*/
 }
 
 @media (max-width: 620px) {
@@ -501,14 +370,18 @@ a {
         align-items: center;
     }
 
+    .content{
+        text-align: center;
+    }
+
     .flex-item {
         margin: 0;
         padding: 0;
     }
 
     .col-first {
-        min-width: 25%;
-        max-width: 25%;
+        min-width: 20%;
+        max-width: 20%;
     }
 
     .PhotoLogo {
@@ -522,8 +395,8 @@ a {
     }
 
     .col-second {
-        min-width: 65%;
-        max-width: 65%;
+        min-width: 60%;
+        max-width: 60%;
         margin: 0;
 
     }
@@ -538,11 +411,9 @@ a {
     }
 
     .col-third {
-        /*min-width: 25%;
-        max-width: 25%;
-        margin: 0  0 0 10%;*/
-
-        margin: 0 0 0 -3%;
+        min-width: 20%;
+        max-width: 20%;
+        margin: 0;
     }
 
     .flex-item-btn {
@@ -665,74 +536,6 @@ a {
         font-size: 25px;
         padding-right: 0;
     }
-
-    /*Выпадающая меню Спросить виталика пусть поможет*/
-    /*
-    .RootMenu > li {
-        padding-bottom: 10px;
-        font-size: 18px;
-    }
-
-    .dropMenu > li {
-        padding-bottom: 10px;
-        margin-top: 1px;
-        font-size: 14px;
-        background: lightcyan;
-        width: 100%;
-        border: 1px solid black;
-    }
-
-    .RootMenu > ul {
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        position: relative;
-    }
-
-    .RootMenu > ul > li {
-        display: flex;
-        height: auto;
-        position: relative;
-    }
-
-    .RootMenu > ul > li > a {
-        position: relative;
-        display: flex;
-        height: auto;
-        box-sizing: border-box;
-        font-size: 23px;
-        text-transform: uppercase;
-        font-weight: bold;
-        line-height: 1.2em;
-        padding: 10px 15px;
-        text-decoration: none;
-    }
-
-    .RootMenu > ul > li:first-child a {
-        border: 0px;
-    }
-
-    .dropMenu {
-        position: absolute;
-        top: 15%;
-        left: 100%;
-        display: none;
-        width: auto;
-    }
-
-    .RootMenu > li:hover ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .RootMenu > ul > li > ul > li > a {
-        white-space: nowrap;
-        text-transform: none;
-        padding: 5px 20px;
-    }*/
 }
 
 @media (min-width: 621px) {
@@ -743,15 +546,19 @@ a {
         flex-direction: row;
     }
 
+    .content{
+        text-align: center;
+    }
+
+
     .flex-item {
         margin: 0;
         padding: 0;
     }
 
     .col-first {
-        min-width: 25%;
-        max-width: 25%;
-        position: relative;
+        min-width: 20%;
+        max-width: 20%;
     }
 
     .PhotoLogo {
@@ -765,10 +572,9 @@ a {
     }
 
     .col-second {
-        min-width: 65%;
-        max-width: 65%;
+        min-width: 60%;
+        max-width: 60%;
         margin: 0;
-        position: relative;
 
     }
 
@@ -782,11 +588,9 @@ a {
     }
 
     .col-third {
-        /*min-width: 25%;
-        max-width: 25%;
-        margin: 0  0 0 10%;*/
-
-        margin: 0 0 0 -3%;
+        min-width: 20%;
+        max-width: 20%;
+        margin: 0;
     }
 
     .flex-item-btn {
@@ -811,6 +615,7 @@ a {
     .flex-container_menu_content {
         flex-direction: row;
     }
+
 
     .flex-content {
         margin: 0 0 0 0;
@@ -845,7 +650,7 @@ a {
         padding: 0;
         text-align: left;
         position: fixed;
-        left: 5%;
+        left: 3.5%;
         top: 53%;
     }
 

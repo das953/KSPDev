@@ -40,12 +40,12 @@ function GetData($lang, $type){
 
                 '<div style="display: inline-flex; flex-direction: column; min-width: 80%; max-width: 80%; margin: 0">
             <!--Header-->
-            <div class="themeLine flex-content" style="margin-left: 0;"><div class="flex-item" style="text-align: center">'
+            <div class="themeLine flex-content" style="margin-left: 0;">'
                 .
                 $row["Header"]
                 .
 
-                '</div></div>
+                '</div>
             <!--Content-->
             <div><pre style="font-size: 15px; white-space: pre-line; text-align: left">'
                 .

@@ -4,16 +4,16 @@ function ClickNav() {
     var content = $("#content");
     switch (text) {
         case "Описание":
-            content.load("content/about.html");
+            content.load("content/about.php");
             break;
         case "Главная":
             content.load("content/main.html");
             break;
         case "Оборудование":
-            content.load("content/equipment.html");
+            content.load("content/equipment.php");
             break;
         case "Статьи":
-            content.load("content/state.html");
+            content.load("content/articles.php");
             break;
         case "Форум":
             document.location = "content/forum.html";
@@ -28,7 +28,7 @@ function ClickNav() {
 
 
 $(document).ready(function () {
-    $("#content").load("content/main.php");
+    $("#content").load("content/news.php");
 });
 
 function SkrollAnchor() {
@@ -52,5 +52,5 @@ window.onscroll = function () {
 
 function OnClickMenu() {
     var content = $("#content");
-    content.load("UA/content/comand.html");
+    content.load("content/aboutUs.html");
 }
