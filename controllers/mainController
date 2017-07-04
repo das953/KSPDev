@@ -46,11 +46,14 @@ angular.module('myApp',[])
 
         function setContentLang(lang, uriArr) {
 
-            var newUri = uriArr[1] + lang + uriArr[3];
+            if(uriArr !== null){
+                var newUri = uriArr[1] + lang + uriArr[3];
                 if(uriArr[0] !== newUri){
                     setContent(true, newUri);
                     window.location = '#' + newUri;
                 }
+            }
+
         }
 
         $scope.changeLang(null);
