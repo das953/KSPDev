@@ -32,10 +32,10 @@
 
             <div class="col-third" style="display: inline-flex; margin-top: 5%">
                 <div class="flex-item flex-item-btn" style="margin-left: 5%"  >
-                    <button type="button" ng-click="sayHello('UA')">UA</button>
+                    <button type="button" ng-click="changeLang('UA')">UA</button>
                 </div>
                 <div class="flex-item flex-item-btn" style="margin-left: 1%; margin-right:  3%">
-                    <button type="button" ng-click="sayHello('RU')">RU</button>
+                    <button type="button" ng-click="changeLang('RU')">RU</button>
                 </div>
             </div>
 
@@ -48,27 +48,27 @@
         <div class="flex-navigation" style="min-width: 100%; background-color: lightgray; justify-content: center; margin-left: 0">
 
             <div class="flex-item ">
-                <a href="#news.php?lang={{lang}}&type=News" class="history" onclick="ClickNav()">Главная</a>
+                <a href="#news.php?lang={{lang}}&type=News" class="history">{{main}}</a>
 
             </div>
             <div class="flex-item history">
-                <a href="#about.php?lang={{lang}}&type=About" class="history"  onclick="ClickNav()">Описание</a>
+                <a href="#about.php?lang={{lang}}&type=About" class="history">{{about}}</a>
 
             </div>
             <div class="flex-item history">
-                <a href="#equipment.php?lang={{lang}}&type=Equipment" onclick="ClickNav()"  class="history">Оборудование</a>
+                <a href="#equipment.php?lang={{lang}}&type=Equipment" class="history">{{equipment}}</a>
 
             </div>
             <div class="flex-item history">
-                <a href="#articles.html?lang={{lang}}&type=Article" onclick="ClickNav()" class="history">Статьи</a>
+                <a href="#articles.html?lang={{lang}}&type=Article" class="history">{{article}}</a>
 
             </div>
             <div class="flex-item history">
-                <a href="#forum.html?lang={{lang}}&type=Forum" onclick="ClickNav()" class="history">Форум</a>
+                <a href="#forum.html?lang={{lang}}&type=Forum" class="history">{{forum}}</a>
 
             </div>
             <div class="flex-item history">
-                <a href="#partners.html?lang={{lang}}&type=Partners" class="history" onclick="ClickNav()">Партнеры</a>
+                <a href="#partners.html?lang={{lang}}&type=Partners" class="history">{{partners}}</a>
 
             </div>
         </div>
@@ -83,42 +83,19 @@
         <nav class="menu">
             <ul class="RootMenu">
                 <li>
-                    <span>Наша команда</span>
                     <ul class="RootMenu">
                         <li  onclick="OnClickMenu()">
-                            <a href="#aboutUs" onclick="OnClickMenu()" class="history">Наша команда</a>
+                            <a href="#aboutUs" onclick="OnClickMenu()" class="history">{{aboutUs}}</a>
                         </li>
-                        <li><span>Галузь роботи</span>
+                        <li><span>{{spectrum}}</span>
                         </li>
-                        <li><span>Наш продукт</span>
+                        <li><span>{{product}}</span>
                         </li>
-                        <li><span>Контакти</span>
+                        <li><span>{{contacts}}</span>
                         </li>
                     </ul>
                 </li>
-                <li><span>Галузь роботи</span>
-                    <ul class="dropMenu">
-                        <li>
-                            <pre>     We haven`t info for this block :\      </pre>
 
-                        </li>
-                    </ul>
-                </li>
-                <li><span>Наш продукт</span>
-                    <ul class="dropMenu">
-                        <li>
-                            <pre>   Наша команда уже около 10 лет активно работает</pre>
-
-                        </li>
-                    </ul>
-                </li>
-                <li><span>Контакти</span>
-                    <ul class="dropMenu">
-                        <li>
-                            <pre>     Nope, its empty       </pre>
-                        </li>
-                    </ul>
-                </li>
             </ul>
         </nav>
     </div><!--Menu-->

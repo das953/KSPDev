@@ -1,4 +1,5 @@
 $('document').ready(function () {
+
     $('.history').on('click', function (e) {
         e.preventDefault();
         var href = $(this).attr('href');
@@ -8,12 +9,17 @@ $('document').ready(function () {
         $('.history').removeClass('active');
         $(this).addClass('active');
     });
+
     var hr = getUrl(location.href);
-    getContent(hr.substring(), true, true);
+    getContent(hr, true, true);
+
 });
+
 window.addEventListener("popState", function (e) {
     getContent(location.pathname, false);
 });
+
+
 function getContent(url, addEntry, reload) {
     var content = $("#content");
 
@@ -25,13 +31,21 @@ function getContent(url, addEntry, reload) {
         if (addEntry == true) {
             history.pushState(null, null, url);
         }
-
+        setContent(reload, url);
 
     });
+
+}
+
+function setContent(reload, url) {
     if (reload == true) {
-        content.load("content/" + url);
+        $("#content").load("content/" + url);
     }
 }
+
+
+
+
 function getUrl(url) {
     var tmp = '';
     for (i = 0; i < url.length; i++) {

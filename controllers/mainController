@@ -2,20 +2,59 @@
 angular.module('myApp',[])
     .controller('langController',['$scope', function($scope) {
 
-        $scope.sayHello = function (lang) {
+        $scope.changeLang = function (lang) {
 
-                $.getJSON( "data/lang" + lang + ".json", function( data, err) {
+            var content = $("#content");
+
+            var regexp = new RegExp(/^.+#(.+lang=)(\D\D)(.+)$/);
+            var uriArr = regexp.exec(content[0].baseURI);
+
+
+            lang === null ?
+                (uriArr === null ? lang = "UA" : lang = uriArr[2])
+                : null;
+
+            $.getJSON( "data/lang" + lang + ".json", function( data, err) {
                 })
                     .done(function(data) {
+
                         $scope.lang = lang;
                         $scope.description = data["description"];
+
+                        $scope.main         = data["navbar"]["main"];
+                        $scope.about        = data["navbar"]["about"];
+                        $scope.equipment    = data["navbar"]["equipment"];
+                        $scope.article      = data["navbar"]["article"];
+                        $scope.forum        = data["navbar"]["forum"];
+                        $scope.partners     = data["navbar"]["partners"];
+
+                        $scope.aboutUs      = data["leftPanel"]["aboutUs"];
+                        $scope.spectrum     = data["leftPanel"]["spectrum"];
+                        $scope.product      = data["leftPanel"]["product"];
+                        $scope.contacts     = data["leftPanel"]["contacts"];
+
+                        setContentLang(lang, uriArr);
+
                         $scope.$apply();
                     })
                     .fail(function(jqXHR, textStatus) { console.log('getJSON request failed! ' + textStatus + '! incorrect ' +
-                        'language ' + lang); })
+                        'language ' + lang); });
+
+
 
         };
 
-        $scope.sayHello('RU');
+        function setContentLang(lang, uriArr) {
+
+            var newUri = uriArr[1] + lang + uriArr[3];
+                if(uriArr[0] !== newUri){
+                    setContent(true, newUri);
+                    window.location = '#' + newUri;
+                }
+        }
+
+        $scope.changeLang(null);
 
     }]);
+
+

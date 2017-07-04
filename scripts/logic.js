@@ -1,32 +1,3 @@
-function ClickNav() {
-
-    var text = $(window.event.target)[0].innerHTML;
-    var content = $("#content");
-    switch (text) {
-        case "Описание":
-            content.load("content/about.php");
-            break;
-        case "Главная":
-            content.load("content/main.html");
-            break;
-        case "Оборудование":
-            content.load("content/equipment.php");
-            break;
-        case "Статьи":
-            content.load("content/articles.php");
-            break;
-        case "Форум":
-            document.location = "content/forum.html";
-            break;
-        case "Партнеры":
-            content.load("content/partners.html");
-            break;
-        default:
-            break;
-    }
-}
-
-
 $(document).ready(function () {
     $("#content").load("content/news.php");
 });
