@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    $("#content").load("content/news.php");
+    $("#content").load("content/news.php?lang=UA&type=News");
+   // history.pushState(null, null, "news.php?lang=UA&type=News");
+    window.location = '#' + "news.php?lang=UA&type=News";
 });
 
 function SkrollAnchor() {
