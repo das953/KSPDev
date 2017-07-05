@@ -25,11 +25,12 @@ function getContent(url, addEntry, reload) {
 
     $.get(url).done(function (data) {
 
-        if (url != undefined) {
+        if (url !== undefined) {
             content.load("content/" + url.substring(1));
         }
-        if (addEntry == true) {
+        if (addEntry === true) {
             history.pushState(null, null, url);
+            console.log(url);
         }
         setContent(reload, url);
 
@@ -38,7 +39,7 @@ function getContent(url, addEntry, reload) {
 }
 
 function setContent(reload, url) {
-    if (reload == true) {
+    if (reload === true) {
         $("#content").load("content/" + url);
     }
 }
@@ -49,7 +50,7 @@ function setContent(reload, url) {
 function getUrl(url) {
     var tmp = '';
     for (i = 0; i < url.length; i++) {
-        if (url.substring(i, i + 1) == '#') {
+        if (url.substring(i, i + 1) === '#') {
             tmp = url.substring(i + 1);
             break;
         }

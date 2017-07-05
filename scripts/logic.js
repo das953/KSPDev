@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $("#content").load("content/news.php?lang=UA&type=News");
-   // history.pushState(null, null, "news.php?lang=UA&type=News");
-    window.location = '#' + "news.php?lang=UA&type=News";
+
+    history.pushState(null, null, "#news.php?lang=UA&type=News");
 });
 
 function SkrollAnchor() {
@@ -9,10 +9,6 @@ function SkrollAnchor() {
 }
 window.onscroll = function () {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    var sc = scrolled + 'px';
-
-    var size = window.innerHeight;
-    console.log(size);
 
     if (scrolled >= 350 ) {
         $(".RootMenu").css("top", 48 + '%');
@@ -24,9 +20,3 @@ window.onscroll = function () {
 
     }
 };
-
-
-function OnClickMenu() {
-    var content = $("#content");
-    content.load("content/aboutUs.html");
-}
