@@ -19,7 +19,7 @@ angular.module('myApp',[])
                     .done(function(data) {
 
                         $scope.lang = lang;
-                        $scope.description = data["description"];
+                        $scope.description  = data["description"];
 
                         $scope.main         = data["navbar"]["main"];
                         $scope.about        = data["navbar"]["about"];
@@ -39,8 +39,6 @@ angular.module('myApp',[])
                     })
                     .fail(function(jqXHR, textStatus) { console.log('getJSON request failed! ' + textStatus + '! incorrect ' +
                         'language ' + lang); });
-
-
 
         };
 
