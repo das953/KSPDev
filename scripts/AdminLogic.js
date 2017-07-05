@@ -8,11 +8,13 @@ document.write(
      "<input type='button' value='Size' onclick='setSize()'/>" +
      "<input type='button' value='http://' onclick='setLink()'>" +
      */"<input type='button' value='IMG' onclick='setImage()'>" +
-    "<br/>" +
+    "<br/>" + "Заглавие" + "<br>" +
     "<iframe scrolling='no' frameborder='no' src='#' id='frameId' name='frameId'>" +
     "</iframe>" +
-    "<br>" +
-    "<iframe scrolling='no' frameborder='no' src='#' id='frameContent' name='frameContent'></iframe>"
+    "<br>" + "Полный текст" + "<br>" +
+    "<iframe scrolling='no' frameborder='no' src='#' id='frameContent' name='frameContent'></iframe>" +
+    "<br>" + "Краткое описание" + "<br>" +
+    "<iframe scrolling='no' frameborder='no' src='#' id='framePreview' name='framePreview'></iframe> "
 );
 
 var isGecko = navigator.userAgent.toLocaleLowerCase().indexOf("gecko") != -1;
@@ -24,6 +26,11 @@ var frameContent = (isGecko) ? document.getElementById("frameContent") : frames[
 var iWinContent = (isGecko) ? frameContent.contentWindow : frameContent.window;
 var iDocContent = (isGecko) ? frameContent.contentDocument : frameContent.document;
 
+var framePreview = (isGecko) ? document.getElementById("framePreview") : frames["framePreview"];
+var iWinPreview = (isGecko) ? framePreview.contentWindow : framePreview.window;
+var iDocPreview = (isGecko) ? framePreview.contentDocument : framePreview.document;
+
+
 var iHTML = "<html><head></head><body style='border: 2px solid black'></body> </html>";
 iDoc.open();
 iDoc.write(iHTML);
@@ -33,8 +40,14 @@ iDocContent.open();
 iDocContent.write(iHTML);
 iDocContent.close();
 
+iDocPreview.open();
+iDocPreview.write(iHTML);
+iDocPreview.close();
+
+
 iDoc.designMode = 'on';
 iDocContent.designMode = 'on';
+iDocPreview.designMode = 'on';
 
 function setImage() {
     iWinContent.focus();
@@ -68,9 +81,12 @@ function save() {
     /*var HtmlContent = "<div style='background: green;' class='ThisIsContent'></div>";
      document.getElementById("content").value = iDoc.body.innerHTML;*/
     ReturnHTMLCode(iDoc.body.innerHTML, 0);
+    ReturnHTMLCode(iDocPreview.body.innerHTML, 2);
     ReturnHTMLCode(iDocContent.body.innerHTML, 1);
+
 }
-var CodeHTML = '';
+var CodeHTML = '';//здесь полное описание плюс заглавие
+var CodePreview = '';//Здесь краткое описание плюс заглавие чтобы смотрелось на траничке красиво
 
 function ReturnHTMLCode(code, ContentOrNO) {
     var htmlcode = code;
@@ -78,12 +94,15 @@ function ReturnHTMLCode(code, ContentOrNO) {
         alert("This Code is null");
 
     if (ContentOrNO == 0)
-        CodeHTML = CreateZ(htmlcode);
-    else
-        CodeHTML += CreateContent(htmlcode);
+        CodeHTML = CreateZ(htmlcode, true);
+    else if (ContentOrNO == 1)
+        CodeHTML += CreateContent(htmlcode, true);
+    else{
+        CodePreview = CodeHTML;
+        CodePreview += CreateContent(htmlcode, false);
+    }
 
-
-    alert(CodeHTML);/*Здесь возврашаеться по идеи полность стилизированый код как в оборудовании*/
+    /*Здесь возврашаеться по идеи полность стилизированый код как в оборудовании*/
 }
 function CreateZ(htmlcode) {
     var BigText = "<div class='themeLine flex-content'>" +
@@ -94,12 +113,13 @@ function CreateZ(htmlcode) {
 
     return BigText;
 }
-function CreateContent(htmlcode) {
+function CreateContent(htmlcode, ComeON) {
     var CodeContent = "<div>" +
         "<pre style='font-size: 20px; font-weight: 400; white-space: pre-line; text-align: left;'>";
 
     var temp = "<span>";
 
+    var count = 0;
     for (var i = 0; i < htmlcode.length; i++) {
         if (htmlcode.substring(i, i + 2) == "</") {
             i += 5;
@@ -109,10 +129,19 @@ function CreateContent(htmlcode) {
             i += 4;
             temp += "</span><span>";
         }
-        else
+        else {
+            count++;
             temp += htmlcode.substring(i, i + 1);
+        }
     }
     CodeContent += temp + "</pre></div>";
 
-    return CodeContent;
+    if (ComeON == true)
+        return CodeContent;
+    else{
+        if(count > 300)
+            alert("Нужно меньше чем 300 символов для краткого описания");
+        else
+            return CodeContent;
+    }
 }
