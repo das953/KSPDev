@@ -10,12 +10,15 @@ function SkrollAnchor() {
 window.onscroll = function () {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
     var sc = scrolled + 'px';
-    /*$(".RootMenu").css("margin-top",topcount + '%');*/
-    if (scrolled >= 587) {
-        $(".RootMenu").css("top", 53 + '%');
+
+    var size = window.innerHeight;
+    console.log(size);
+
+    if (scrolled >= 350 ) {
+        $(".RootMenu").css("top", 48 + '%');
         $(".anchorImg").css("display", 'flex');
     }
-    if (scrolled <= 100) {
+    if (scrolled <= 300) {
         $(".RootMenu").css("top", 58 + '%');
         $(".anchorImg").css("display", 'none');
 
