@@ -1,3 +1,6 @@
+var leftPanelNames = ["AboutUs" , "Spectrum" , "Product" , "Contacts" ];
+var regExp = new RegExp(/^.*type=(.*)$/);
+
 $('document').ready(function () {
 
     $('.history').on('click', function (e) {
@@ -10,9 +13,6 @@ $('document').ready(function () {
         $(this).addClass('active');
     });
 
-    var hr = getUrl(location.href);
-    getContent(hr, true, true);
-
 });
 
 window.addEventListener("popState", function (e) {
@@ -22,15 +22,14 @@ window.addEventListener("popState", function (e) {
 
 function getContent(url, addEntry, reload) {
     var content = $("#content");
-
+console.log("url is : "+url);
     $.get(url).done(function (data) {
 
         if (url !== undefined) {
-            content.load("content/" + url.substring(1));
+            setContent(true, url.substring(1));
         }
         if (addEntry === true) {
             history.pushState(null, null, url);
-            console.log(url);
         }
         setContent(reload, url);
 
@@ -40,20 +39,14 @@ function getContent(url, addEntry, reload) {
 
 function setContent(reload, url) {
     if (reload === true) {
-        $("#content").load("content/" + url);
+        var content = $("#content");
+
+
+        leftPanelNames.indexOf(regExp.exec(url)[1]) === -1
+            ?
+            content.load("content/" + url)
+            :
+            content .load("leftPanel/" + url);
     }
 }
 
-
-
-
-function getUrl(url) {
-    var tmp = '';
-    for (i = 0; i < url.length; i++) {
-        if (url.substring(i, i + 1) === '#') {
-            tmp = url.substring(i + 1);
-            break;
-        }
-    }
-    return tmp;
-}

@@ -7,9 +7,9 @@
 
     <script src="scripts/jquery-3.2.1.min%20.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script src="scripts/logic.js"></script>
-    <script src="scripts/history.js"></script>
-    <script src="controllers/mainController"></script>
+    <script src="scripts/logic.js" defer></script>
+    <script src="scripts/history.js" defer></script>
+    <script src="controllers/mainController" defer></script>
 
 </head>
 <body ng-controller="langController" >
@@ -84,14 +84,17 @@
             <ul class="RootMenu">
                 <li>
                     <ul class="RootMenu">
+                        <li><!--class="history"-->
+                            <a href="#aboutUs.php?lang={{lang}}&type=AboutUs" class="history">{{aboutUs}}</a>
+                        </li>
                         <li>
-                            <a href="#aboutUs.php?lang={{lang}}&type=AboutUS" class="history">{{aboutUs}}</a>
+                            <a href="#spectrum.php?lang={{lang}}&type=Spectrum" class="history">{{spectrum}}</a>
                         </li>
-                        <li><span>{{spectrum}}</span>
+                        <li>
+                            <a href="#product.php?lang={{lang}}&type=Product" class="history">{{product}}</a>
                         </li>
-                        <li><span>{{product}}</span>
-                        </li>
-                        <li><span>{{contacts}}</span>
+                        <li>
+                            <a href="#contacts.php?lang={{lang}}&type=Contacts" class="history">{{contacts}}</a>
                         </li>
                     </ul>
                 </li>

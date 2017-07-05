@@ -6,9 +6,9 @@ angular.module('myApp',[])
 
             var content = $("#content");
 
-            var regexp = new RegExp(/^.+#(.+lang=)(\D\D)(.+)$/);
-            var uriArr = regexp.exec(content[0].baseURI);
 
+            var regExp = new RegExp(/^.+#(.+lang=)(\D\D)(.+)$/);
+            var uriArr = regExp.exec(content[0].baseURI);
 
             lang === null ?
                 (uriArr === null ? lang = "UA" : lang = uriArr[2])
@@ -47,8 +47,7 @@ angular.module('myApp',[])
             if(uriArr !== null){
                 var newUri = uriArr[1] + lang + uriArr[3];
                 if(uriArr[0] !== newUri){
-                    setContent(true, newUri);
-                    history.pushState(null, null, '#' + newUri);
+                    getContent('#' + newUri, true, true);
                 }
             }
 
