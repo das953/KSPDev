@@ -16,13 +16,15 @@ a {
         align-items: center;
     }
 
-    .content{
+    .content {
         text-align: center;
+        margin-top: 10%;
     }
 
     .flex-item {
         margin: 0;
         padding: 0;
+
     }
 
     .col-first {
@@ -194,7 +196,7 @@ a {
         align-items: center;
     }
 
-    .content{
+    .content {
         text-align: center;
     }
 
@@ -207,6 +209,7 @@ a {
         min-width: 20%;
         max-width: 20%;
     }
+
     .PhotoLogo {
         background-size: cover;
         background-image: url("../resources/img/Logo.png");
@@ -370,12 +373,12 @@ a {
         align-items: center;
     }
 
-    .content{
+    .content {
         text-align: center;
+        margin-top: 15%;
     }
 
     .flex-item {
-        margin: 0;
         padding: 0;
     }
 
@@ -391,7 +394,7 @@ a {
         height: 250px;
         max-height: 250px;
         width: 250px;
-        margin: 0 0 0 -35%;
+        margin: 0 0 0 -160%;
     }
 
     .col-second {
@@ -481,6 +484,8 @@ a {
     .anchorImg {
         width: 30px;
         height: 30px;
+        position: fixed;
+        top: 63%;
     }
 
     .facebook {
@@ -546,10 +551,9 @@ a {
         flex-direction: row;
     }
 
-    .content{
+    .content {
         text-align: center;
     }
-
 
     .flex-item {
         margin: 0;
@@ -616,7 +620,6 @@ a {
         flex-direction: row;
     }
 
-
     .flex-content {
         margin: 0 0 0 0;
     }
@@ -642,7 +645,8 @@ a {
         display: flex;
         flex-direction: row;
     }
-    .RootMenu{
+
+    .RootMenu {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -651,7 +655,7 @@ a {
         text-align: left;
         position: fixed;
         left: 3.5%;
-        top: 53%;
+        top: 58%;
     }
 
     .RootMenu > ul {
@@ -710,7 +714,8 @@ a {
         width: 30px;
         height: 30px;
         position: fixed;
-        top: 68%;
+        top: 60%;
+        display: none;
     }
 
     /*Footer*/
@@ -766,6 +771,52 @@ a {
         font-weight: bold;
         font-size: 25px;
         padding-right: 0;
+    }
+
+    @-moz-document url-prefix() {
+
+        .PhotoLogo {
+            background-size: cover;
+            background-image: url("../resources/img/Logo.png");
+
+            height: 250px;
+            max-height: 250px;
+            width: 250px;
+            margin: 0 0 0 0;
+        }
+        .flex-item-Text {
+            margin: 0 0 0 0;
+            padding: 0;
+        }
+        .forMozila{
+            margin: 130px 0 0 0;
+            text-align: center;
+        }
+        .col-second{
+            min-width: 60%;
+            max-width: 60%;
+        }
+        .facebook{
+            margin: 130px 0 0 0;
+        }
+    }
+    @supports (-ms-ime-align: auto) {
+
+        .flex-item-Text {
+            margin: 0 0 0 0;
+            padding: 0;
+        }
+        .forMozila{
+            margin: 130px 0 0 0;
+            text-align: center;
+        }
+        .col-second{
+            min-width: 60%;
+            max-width: 60%;
+        }
+        .facebook{
+            margin: 130px 0 0 0;
+        }
     }
 
     /*Выпадающая меню Спросить виталика пусть поможет*/
