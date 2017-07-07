@@ -8,6 +8,7 @@
 <body>
 <div style="display: inline-flex; flex-direction: column; min-width: 80%;max-width: 80%; margin: 0">
 
+
     <div class="themeLineNews flex-content" style="margin-left: 0;">
         <div class="flex-item" style="margin-left: 0">
 
