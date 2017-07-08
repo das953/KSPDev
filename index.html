@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"  ng-app="myApp">
+<html lang="en"  ng-app="myApp" >
+<!--prefix="og: http://ogp.me/ns#"-->
 <head>
     <meta charset="UTF-8">
     <title>VMS</title>
@@ -11,10 +12,26 @@
     <script src="scripts/history.js" defer></script>
     <script src="controllers/mainController" defer></script>
 
+    <meta property="og:url" content="http://vmsystem.com.ua/">
+    <meta property="og:image" content="http://vmsystem.com.ua/resources/img/Logo.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Test it" />
+    <meta property="og:description" content="Some kind of bla" />
+
 </head>
 <body ng-controller="langController" >
+<script src="scripts/fbConnect.js"></script>
 
+<!--TODO
 
+на рах FB, ось ці всі ог: теги, можливо я щось не підключив, а можливо,
+тут вся біда в залоченому сайті. хз, треба почитати мануал в 1000й раз.
+але шарити вже можна. тому поки так залишити, допилити інше. головне :
+ прикріпити ту форму для feedback,
+  долити контент в базу,
+  додати в базу бітове поле для розділу news
+
+-->
 
 <div id="Header"><!--Header-->
 
@@ -38,8 +55,6 @@
                     <button type="button" ng-click="changeLang('RU')">RU</button>
                 </div>
             </div>
-
-
 
         </div>
     </div>
@@ -122,8 +137,10 @@
         <p class="forMozila">KSPDev</p>
     </div>
     <div class="flex-item col-third FacebookForMozila" style="margin-top: 7%;"> <!--style="margin-top: 5%;margin-left: 32.2%"-->
-        <a href="http://facebook.com"><img class="facebook" src="resources/img/FB.png"></a>
+        <div id="shareBtn" class="btn btn-success clearfix"><img class="facebook" src="resources/img/FB.png"></div>
     </div>
 </div><!--Footer end-->
+
+<script src="scripts/fbHandler.js"></script>
 </body>
 </html>

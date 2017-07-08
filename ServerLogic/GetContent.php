@@ -47,7 +47,7 @@ function GetData($lang, $type){
 
                 '</div>
             <!--Content-->
-            <div><pre style="font-size: 15px; white-space: pre-line; text-align: left">'
+            <div><pre style="font-size: 15px; white-space: pre-line; text-align: justify">'
                 .
                 $row["Content"]
                 .

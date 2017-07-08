@@ -8,6 +8,20 @@ a {
     color: black;
 }
 
+.contentImg{
+    width: 80%;
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+.Tab5{
+    padding-left: 5em;
+}
+.Tab7{
+    padding-left: 7em;
+    margin: 0;
+}
+
 @media (max-width: 320px) {
     .flex-container {
         display: inline-flex;
