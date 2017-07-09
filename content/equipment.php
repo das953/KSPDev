@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Обладнання</title>
+    <title>Equipment</title>
     <link rel="stylesheet" href="../styles/Style.css">
 </head>
 <body>
