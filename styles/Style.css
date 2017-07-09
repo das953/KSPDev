@@ -913,3 +913,51 @@ a {
     margin-bottom: 0.7%;
 }
 
+
+
+.StandartInput{
+    width: 32.8%;
+    height: 2em;
+}
+.BigInput{
+    width: 66.4%;
+    height:2em;
+}
+.ASKInput{
+    height: 13em;
+}
+.LineInput{
+    width: 50%;
+}
+.LogoInput{
+    text-transform: uppercase;
+    color: darkgreen;
+    font-size: 25px;
+    margin: 0 0 1% 25%;
+}
+.FeadBackForm{
+    margin-left: 25%;
+}
+.marlin{
+    margin-top: 3%;
+}
+.formText{
+    text-transform: uppercase;
+    color: silver;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 1.7%;
+
+}
+.EmailINP{
+    margin: 1.7% 0 0 25%;
+
+}
+.ButtonINP{
+    width: 35%;
+    height: 3em;
+    border: 0px solid black;
+    background: green;
+    color: white;
+    font-size: 17px;
+}
