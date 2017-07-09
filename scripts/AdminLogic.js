@@ -8,13 +8,12 @@ document.write(
      "<input type='button' value='Size' onclick='setSize()'/>" +
      "<input type='button' value='http://' onclick='setLink()'>" +
      */"<input type='button' value='IMG' onclick='setImage()'>" +
-    "<br/>" + "Заглавие" + "<br>" +
-    "<iframe scrolling='no' frameborder='no' src='#' id='frameId' name='frameId'>" +
-    "</iframe>" +
-    "<br>" + "Полный текст" + "<br>" +
-    "<iframe scrolling='no' frameborder='no' src='#' id='frameContent' name='frameContent'></iframe>" +
-    "<br>" + "Краткое описание" + "<br>" +
-    "<iframe scrolling='no' frameborder='no' src='#' id='framePreview' name='framePreview'></iframe> "
+    "<br/>" +"<label class='AdminText' for='frameId'> Заглавие </label>"+ "<br>" +
+    "<input type='textarea' scrolling='no' src='#' id='frameId' name='frameId' placeholder='В этом поле необходимо ввести заголовок вашей статьи.'>" +
+    "<br>" + "<label class='AdminText' for='frameContent'>Полный текст</label>" + "<br>" +
+    "<input type='textarea' scrolling='no' src='#' id='frameContent' name='frameContent' placeholder='В этом поле необходимо ввести основной контент вашей статьи'>" + "<br/>" +
+    "<label class='AdminText' for='framePreview'>Краткое описание</label>" + "<br>" +
+    "<input type='textarea' scrolling='no' src='#' id='framePreview' name='framePreview' placeholder='В этом поле необходимо ввести краткое описание вашей статьи'>" + "<br/>" + "<br/>"
 );
 
 var isGecko = navigator.userAgent.toLocaleLowerCase().indexOf("gecko") != -1;
@@ -31,7 +30,7 @@ var iWinPreview = (isGecko) ? framePreview.contentWindow : framePreview.window;
 var iDocPreview = (isGecko) ? framePreview.contentDocument : framePreview.document;
 
 
-var iHTML = "<html><head></head><body style='border: 2px solid black'></body> </html>";
+var iHTML = "<html><head></head><body style='border: 0px;'></body> </html>";
 iDoc.open();
 iDoc.write(iHTML);
 iDoc.close();
@@ -101,6 +100,8 @@ function ReturnHTMLCode(code, ContentOrNO) {
         CodePreview = CodeHTML;
         CodePreview += CreateContent(htmlcode, false);
     }
+    alert(CodeHTML);
+    alert(CodePreview);
 
     /*Здесь возврашаеться по идеи полность стилизированый код как в оборудовании*/
 }

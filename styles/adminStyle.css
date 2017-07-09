@@ -19,7 +19,88 @@
     flex-direction: row;
     align-items: center;
 }
-#frameId{
-    width: 50%;
+[id] {
+    border-radius: 5px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    border: 1px solid rebeccapurple;
+    word-break: break-all;
+}
+#frameId {
+    width: 70%;
     height: 5em;
+}
+#frameId:focus {
+    width: 90%;
+    height: 5.5em;
+    background-color: lightgoldenrodyellow;
+    border-left: 5px solid blue;
+    border-radius: 1px;
+}
+#frameContent {
+    width: 70%;
+    height: 15em;
+}
+#frameContent:focus {
+    width: 90%;
+    height: 15em;
+    background-color: lightgoldenrodyellow;
+    border-left: 5px solid blue;
+    border-radius: 1px;
+}
+#framePreview {
+    width: 70%;
+    height: 5em;
+}
+#framePreview:focus {
+    width: 90%;
+    height: 5.5em;
+    background-color: lightgoldenrodyellow;
+    border-left: 5px solid blue;
+    border-radius: 1px;
+}
+.AdminText{
+    font-size: 30px;
+    font-family: Andy, sans-serif;
+    font-weight: 600;
+    display: inline-block;
+}
+body * {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+body {
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid mediumvioletred;
+    background-color: darkgrey;
+    text-align:center;
+}
+html {
+    background-color: #808080;
+}
+input[type=button], input[type=submit] {
+    align-items: center;
+    display: inline-block;/*Это дополнение к свойству vertical-align не работает*/
+    vertical-align: baseline;/*Данное свойство не работает*/
+    padding-top:0.8em;/*Нужно решить вопрос с вертикальным выравниванием надписи на кнопке*/
+    font-size: 1em;
+    border: 2px solid red;
+    border-radius: 25px;
+    width: 10em;
+    height: 3em;
+}
+input[type=button]:hover {
+    background-color: lightslategray;
+    font-weight: 700;
+}
+input[type=submit]:hover {
+    background-color: lightslategray;
+    font-weight:700;
 }
