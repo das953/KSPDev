@@ -1,106 +1,445 @@
-.admin-container{
+body {
     display: flex;
-    min-width: 100%;
-    flex-direction: row;
-}
-.admin-item{
-    margin: 0 1% 0 0;
-    padding: 1%;
-}
-.item{
-    margin-left: 0.5%;
-}
-.sizeinp{
-    width: 5%;
-}
-.frame-container{
-    display: flex;
-    min-width: 100%;
-    flex-direction: row;
+    flex-flow: column;
     align-items: center;
-}
-[id] {
+    margin: 10px;
+    flex: 1;
+    border: 1px solid #df928c;
     border-radius: 5px;
-    background-color: lightgrey;
-    border-radius: 5px;
-    border: 1px solid rebeccapurple;
-    word-break: break-all;
+    background-color: #fbfbfb;
+    box-shadow: 3px 3px 2px 0 #dddddd;
 }
-#frameId {
-    width: 70%;
-    height: 5em;
-}
-#frameId:focus {
-    width: 90%;
-    height: 5.5em;
-    background-color: lightgoldenrodyellow;
-    border-left: 5px solid blue;
-    border-radius: 1px;
-}
-#frameContent {
-    width: 70%;
-    height: 15em;
-}
-#frameContent:focus {
-    width: 90%;
-    height: 15em;
-    background-color: lightgoldenrodyellow;
-    border-left: 5px solid blue;
-    border-radius: 1px;
-}
-#framePreview {
-    width: 70%;
-    height: 5em;
-}
-#framePreview:focus {
-    width: 90%;
-    height: 5.5em;
-    background-color: lightgoldenrodyellow;
-    border-left: 5px solid blue;
-    border-radius: 1px;
-}
-.AdminText{
-    font-size: 30px;
-    font-family: Andy, sans-serif;
-    font-weight: 600;
-    display: inline-block;
-}
-body * {
+
+html {
+    background-color: #fdfdfd;
     display: flex;
+    align-items: stretch;
+    justify-content: center;
+    font-size: 16px;
+}
+
+[id] {
+    border: 1px solid #dddddd;
+}
+
+/*Поля ввода*/
+.flexInput {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.AdminText {
+    font-size: 2em;
+    font-family: "Lucida Console", "Courier New", Andy, sans-serif;
+    font-weight: 600;
+    opacity: 1;
+    order: -1;
+}
+
+/*До 767 пикселей*/
+@media (max-width: 767px) {
+    #frameId {
+        width: 500px;
+        height: 100px;
+        border-left: 2px solid #105da4;
+        box-shadow: none;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-shadow 0.5s ease;
+        background-color: transparent;
+    }
+
+    #frameId:focus + .AdminText {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    #frameId:focus {
+        width: 650px;
+        height: 150px;
+        border: none;
+        box-shadow: 7px 7px 5px #dddddd;
+        border-left: 5px solid blue;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-shadow 0.5s ease;
+        background-color: #ffffff;
+    }
+
+    #frameContent {
+        width: 500px;
+        height: 200px;
+        box-shadow: none;
+        border-left: 2px solid #105da4;
+        opacity: 1;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-shadow ease;
+        background-color: transparent;
+    }
+
+    #frameContent:focus {
+        width: 650px;
+        height: 300px;
+        border: none;
+        box-shadow: 7px 7px 5px 0 #dddddd;
+        border-left: 5px solid blue;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-sadow ease;
+        background-color: #ffffff;
+    }
+
+    #frameContent:focus + .AdminText {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    #framePreview {
+        width: 500px;
+        height: 100px;
+        box-shadow: none;
+        border-left: 2px solid #105da4;
+        opacity: 1;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-shadow ease;
+        background-color: transparent;
+    }
+
+    #framePreview:focus {
+        width: 650px;
+        height: 150px;
+        border: none;
+        box-shadow: 7px 7px 5px 0 #dddddd;
+        border-left: 5px solid blue;
+        transition: width 0.5s, height 0.5s, border 0.5s ease;
+        background-color: #ffffff;
+    }
+
+    #framePreview:focus + .AdminText {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+
+    }
+}
+
+/*От 768 до 992 пикселей */
+@media (min-width: 768px ) {
+    #frameId {
+        width: 650px;
+        height: 100px;
+        border-left: 2px solid #105da4;
+        box-shadow: none;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-shadow 0.5s ease;
+        background-color: transparent;
+    }
+
+    #frameId:focus + .AdminText {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    #frameId:focus {
+        width: 750px;
+        height: 150px;
+        border: none;
+        box-shadow: 7px 7px 5px #dddddd;
+        border-left: 5px solid blue;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-shadow 0.5s ease;
+        background-color: #ffffff;
+    }
+
+    #frameContent {
+        width: 650px;
+        height: 200px;
+        box-shadow: none;
+        border-left: 2px solid #105da4;
+        opacity: 1;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-shadow ease;
+        background-color: transparent;
+    }
+
+    #frameContent:focus {
+        width: 750px;
+        height: 300px;
+        border: none;
+        box-shadow: 7px 7px 5px 0 #dddddd;
+        border-left: 5px solid blue;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-sadow ease;
+        background-color: #ffffff;
+    }
+
+    #frameContent:focus + .AdminText {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    #framePreview {
+        width: 650px;
+        height: 100px;
+        box-shadow: none;
+        border-left: 2px solid #105da4;
+        opacity: 1;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-shadow ease;
+        background-color: transparent;
+    }
+
+    #framePreview:focus {
+        width: 750px;
+        height: 150px;
+        border: none;
+        box-shadow: 7px 7px 5px 0 #dddddd;
+        border-left: 5px solid blue;
+        transition: width 0.5s, height 0.5s, border 0.5s ease;
+        background-color: #ffffff;
+    }
+
+    #framePreview:focus + .AdminText {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+
+    }
+}
+
+/*От 993 до 1200 пикселей*/
+@media (min-width: 993px) {
+    #frameId {
+        width: 800px;
+        height: 100px;
+        border-left: 2px solid #105da4;
+        box-shadow: none;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-shadow 0.5s ease;
+        background-color: transparent;
+    }
+
+    #frameId:focus + .AdminText {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    #frameId:focus {
+        width: 950px;
+        height: 150px;
+        border: none;
+        box-shadow: 7px 7px 5px #dddddd;
+        border-left: 5px solid blue;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-shadow 0.5s ease;
+        background-color: #ffffff;
+    }
+
+    #frameContent {
+        width: 800px;
+        height: 200px;
+        box-shadow: none;
+        border-left: 2px solid #105da4;
+        opacity: 1;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-shadow ease;
+        background-color: transparent;
+    }
+
+    #frameContent:focus {
+        width: 950px;
+        height: 300px;
+        border: none;
+        box-shadow: 7px 7px 5px 0 #dddddd;
+        border-left: 5px solid blue;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-sadow ease;
+        background-color: #ffffff;
+    }
+
+    #frameContent:focus + .AdminText {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    #framePreview {
+        width: 800px;
+        height: 100px;
+        box-shadow: none;
+        border-left: 2px solid #105da4;
+        opacity: 1;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-shadow ease;
+        background-color: transparent;
+    }
+
+    #framePreview:focus {
+        width: 950px;
+        height: 150px;
+        border: none;
+        box-shadow: 7px 7px 5px 0 #dddddd;
+        border-left: 5px solid blue;
+        transition: width 0.5s, height 0.5s, border 0.5s ease;
+        background-color: #ffffff;
+    }
+
+    #framePreview:focus + .AdminText {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+
+    }
+}
+
+/*От 1200 пикселей и выше*/
+@media (min-width: 1200px) {
+    #frameId {
+        width: 1000px;
+        height: 100px;
+        border-left: 2px solid #105da4;
+        box-shadow: none;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-shadow 0.5s ease;
+        background-color: transparent;
+    }
+
+    #frameId:focus + .AdminText {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    #frameId:focus {
+        width: 1150px;
+        height: 150px;
+        border: none;
+        box-shadow: 7px 7px 5px #dddddd;
+        border-left: 5px solid blue;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-shadow 0.5s ease;
+        background-color: #ffffff;
+    }
+
+    #frameContent {
+        width: 1000px;
+        height: 200px;
+        box-shadow: none;
+        border-left: 2px solid #105da4;
+        opacity: 1;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-shadow ease;
+        background-color: transparent;
+    }
+
+    #frameContent:focus {
+        width: 1150px;
+        height: 300px;
+        border: none;
+        box-shadow: 7px 7px 5px 0 #dddddd;
+        border-left: 5px solid blue;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-sadow ease;
+        background-color: #ffffff;
+    }
+
+    #frameContent:focus + .AdminText {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    #framePreview {
+        width: 1000px;
+        height: 100px;
+        box-shadow: none;
+        border-left: 2px solid #105da4;
+        opacity: 1;
+        transition: width 0.5s, height 0.5s, border 0.5s, box-shadow ease;
+        background-color: transparent;
+    }
+
+    #framePreview:focus {
+        width: 1150px;
+        height: 150px;
+        border: none;
+        box-shadow: 7px 7px 5px 0 #dddddd;
+        border-left: 5px solid blue;
+        transition: width 0.5s, height 0.5s, border 0.5s ease;
+        background-color: #ffffff;
+    }
+
+    #framePreview:focus + .AdminText {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+}
+
+/*body * {
+    /*display: flex;
     flex-direction: column;
     margin: 0 auto;
-    text-align: center;
+}*/
+/*Кнопки*/
+.flexBtn {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-around;
 }
-body {
-    position: relative;
-    top: 10px;
-    margin: 0 auto;
-    width: 90%;
-    padding: 1em;
-    border-radius: 10px;
-    border: 1px solid mediumvioletred;
-    background-color: darkgrey;
-    text-align:center;
+
+.flexBtn input {
+    margin: 1em;
 }
-html {
-    background-color: #808080;
-}
+
 input[type=button], input[type=submit] {
     align-items: center;
-    display: inline-block;/*Это дополнение к свойству vertical-align не работает*/
-    vertical-align: baseline;/*Данное свойство не работает*/
-    padding-top:0.8em;/*Нужно решить вопрос с вертикальным выравниванием надписи на кнопке*/
+    padding-top: 0.8em; /*Нужно решить вопрос с вертикальным выравниванием надписи на кнопке*/
     font-size: 1em;
-    border: 2px solid red;
-    border-radius: 25px;
+    border: 1px solid #dddddd;
+    background-color: transparent;
     width: 10em;
     height: 3em;
 }
+
 input[type=button]:hover {
-    background-color: lightslategray;
+    box-shadow: 0 0 3px 3px #dd1718;
+    border: none;
+    transition: box-shadow 0.5s, border 0.1s ease;
     font-weight: 700;
 }
+
 input[type=submit]:hover {
-    background-color: lightslategray;
-    font-weight:700;
+    box-shadow: 0 0 3px 3px #105da4;
+    border: none;
+    transition: box-shadow 0.5s, border 0.1s ease;
+    font-weight: 700;
+}
+
+/*Стилизация Placeholder*/
+::-webkit-input-placeholder {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 100;
+    color: #b4b4b4;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+:focus::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+::-moz-placeholder {
+    font-size: 16px;
+    color: #b4b4b4;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+:focus::-moz-placeholder {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+:-moz-placeholder {
+    font-size: 16px;
+    color: #b4b4b4;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+:focus:-moz-placeholder {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+:-ms-input-placeholder {
+    font-size: 16px;
+    color: #b4b4b4;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+:focus:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity 1s ease;
 }
