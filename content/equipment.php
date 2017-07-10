@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Equipment</title>
-    <link rel="stylesheet" href="../styles/Style.css">
-</head>
-<body>
+
 <?php
 
 $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -20,5 +13,3 @@ foreach ($data as &$value){
 }
 
 ?>
-</body>
-</html>

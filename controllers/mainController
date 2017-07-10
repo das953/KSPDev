@@ -25,7 +25,7 @@ angular.module('myApp',[])
                         $scope.about        = data["navbar"]["about"];
                         $scope.equipment    = data["navbar"]["equipment"];
                         $scope.article      = data["navbar"]["article"];
-                        $scope.forum        = data["navbar"]["forum"];
+                        $scope.feedback     = data["navbar"]["feedback"];
                         $scope.partners     = data["navbar"]["partners"];
 
                         $scope.aboutUs      = data["leftPanel"]["aboutUs"];
@@ -56,5 +56,3 @@ angular.module('myApp',[])
         $scope.changeLang(null);
 
     }]);
-
-

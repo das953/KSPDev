@@ -819,6 +819,11 @@ a {
 
     @-moz-document url-prefix() {
 
+        .flex-navigation{
+            min-height: 45px;
+            margin-bottom: 25px;
+        }
+
         .PhotoLogo {
             background-size: cover;
             background-image: url("../resources/img/Logo.png");
@@ -916,27 +921,36 @@ a {
 
 
 .StandartInput{
-    width: 32.8%;
-    height: 2em;
+    width: 47%;
+    height: 25px;
+    border: 1px solid lightgray;
 }
 .BigInput{
-    width: 66.4%;
-    height:2em;
+    width: 100%;
+    min-height: 25px;
+    margin-top: 25px;
+    border: 1px solid lightgray;
 }
 .ASKInput{
     height: 13em;
 }
 .LineInput{
-    width: 50%;
+    text-align: center;
+    width: 70%;
 }
 .LogoInput{
     text-transform: uppercase;
     color: darkgreen;
     font-size: 25px;
-    margin: 0 0 1% 25%;
+    text-align: center;
 }
-.FeadBackForm{
-    margin-left: 25%;
+.FeedBackForm{
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 80%;
+    max-width: 80%;
+    text-align: left;
+    margin-left: 20%;
 }
 .marlin{
     margin-top: 3%;
@@ -945,19 +959,25 @@ a {
     text-transform: uppercase;
     color: silver;
     font-size: 20px;
-    position: absolute;
-    margin-top: 1.7%;
+    position: relative;
+    height: 25px;
+    padding: 0;
+    margin-top: 25px;
+
 
 }
-.EmailINP{
-    margin: 1.7% 0 0 25%;
 
-}
 .ButtonINP{
-    width: 35%;
+    min-width: 35%;
     height: 3em;
     border: 0px solid black;
     background: green;
     color: white;
     font-size: 17px;
+}
+
+.feedbackRow{
+    width: 80%;
+    display: inline-flex;
+    justify-content: space-between;
 }

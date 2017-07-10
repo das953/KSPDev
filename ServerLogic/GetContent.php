@@ -67,6 +67,28 @@ function GetData($lang, $type){
     return $res;
 }
 
+function GetContent($lang, $type){
+    $res = array();
+
+    $str = file_get_contents("../data/lang{$lang}.json");
+    $json = json_decode($str, true); // decode the JSON into an associative array
+    if($type == 'Feedback' ){
+
+        $res['tittle'] = $json['feedback']['tittle'];
+        $res['mail'] = $json['feedback']['mail'];
+        $res['name'] = $json['feedback']['name'];
+
+        $res['theme'] = $json['feedback']['theme'];
+        $res['text'] = $json['feedback']['text'];
+        $res['send'] = $json['feedback']['send'];
+
+    }
+
+
+
+
+    return $res;
+}
 
 
 ?>
