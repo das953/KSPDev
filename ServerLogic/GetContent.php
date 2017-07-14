@@ -82,6 +82,11 @@ function GetContent($lang, $type){
         $res['text'] = $json['feedback']['text'];
         $res['send'] = $json['feedback']['send'];
 
+        $res['correctText'] = $json['feedback']['correctText'];
+        $res['uncorrectText'] = $json['feedback']['uncorrectText'];
+        $res['backBtn'] = $json['feedback']['backBtn'];
+
+
     }
 
 

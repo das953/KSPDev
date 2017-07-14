@@ -8,10 +8,20 @@ a {
     color: black;
 }
 
+html, pre, p, span, a, button, div, ul, li, text, strong{
+    font-family: Arial, serif;
+}
+
 .contentImg{
     width: 80%;
     max-width: 80%;
     margin-left: 10%;
+}
+
+.contentImgSm{
+    width: 40%;
+    max-width: 40%;
+    margin-left: 30%;
 }
 
 
@@ -930,6 +940,7 @@ a {
     min-height: 25px;
     margin-top: 25px;
     border: 1px solid lightgray;
+    resize: none;
 }
 .ASKInput{
     height: 13em;
@@ -980,4 +991,12 @@ a {
     width: 80%;
     display: inline-flex;
     justify-content: space-between;
+}
+
+.feedbackResult{
+    width: 80%;
+    display: inline-flex;
+    /*text-align: center*/
+    justify-content: space-around;
+    text-align: center;
 }
