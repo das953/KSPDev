@@ -8,6 +8,10 @@ a {
     color: black;
 }
 
+html, pre, p, span, a, button, div, ul, li, text, strong{
+    font-family: Arial, serif;
+}
+
 .contentImg{
     width: 80%;
     max-width: 80%;
