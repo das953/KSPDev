@@ -982,3 +982,11 @@ a {
     display: inline-flex;
     justify-content: space-between;
 }
+
+.feedbackResult{
+    width: 80%;
+    display: inline-flex;
+    /*text-align: center*/
+    justify-content: space-around;
+    text-align: center;
+}
