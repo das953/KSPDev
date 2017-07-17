@@ -910,6 +910,11 @@ html, pre, p, span, a, button, div, ul, li, text, strong{
     margin: 0 0 0.5% 0;
     background: cornflowerblue;
     border: 2px solid black;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.quest_Text_ul:hover{
+    background: orange;
 }
 
 .Forum_ans {
@@ -917,19 +922,46 @@ html, pre, p, span, a, button, div, ul, li, text, strong{
     flex-direction: column;
 }
 
+
+
 .Quest_name {
     width: 13%;
+    margin-top: 3%;
     margin-bottom: 0.7%;
+    margin-left: 2%;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 3.5px 3.5px 10px rgba(0,0,0,0.5);
 }
 
 .Quest_text {
+    text-align: left;
+    text-transform: capitalize;
     width: 30%;
-    height: auto;
+    height: 13em;
     margin-bottom: 0.7%;
+    margin-left: 3%;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 3.5px 3.5px 10px rgba(0,0,0,0.5);
+}
+.Quest_text::placeholder
+.Quest_text::-webkit-input-placeholder{
+    font-size: 36px;
+    color: red;
 }
 
+.Quest_btn{
+    width: 30%;
+    height: auto;
+    background: orangered;
+    font-weight: 800;
+    font-size: 23px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border: 0;
+}
 
-
+.Message{
+    margin: 0.5% 0 0.5% 0;
+}
 .StandartInput{
     width: 47%;
     height: 25px;
