@@ -6,7 +6,8 @@ $('document').ready(function () {
     $('.history').on('click', function (e) {
         e.preventDefault();
         var href = $(this).attr('href');
-
+        console.log("url is : "+ href);
+        console.log("loc is : "  + window.location);
         /*Function getContent*/
         getContent(href, true);
         $('.history').removeClass('active');
@@ -25,13 +26,13 @@ function getContent(url, addEntry, reload) {
 console.log("url is : "+url);
     $.get(url).done(function (data) {
 
-        if (url !== undefined) {
+        if (url !== 'undefined') {
             setContent(true, url.substring(1));
         }
         if (addEntry === true) {
             history.pushState(null, null, url);
         }
-        setContent(reload, url);
+        //setContent(reload, url);
 
     });
 
@@ -40,6 +41,8 @@ console.log("url is : "+url);
 function setContent(reload, url) {
     if (reload === true) {
         var content = $("#content");
+
+        console.log("url is : "+url);
 
 
         leftPanelNames.indexOf(regExp.exec(url)[1]) === -1
