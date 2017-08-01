@@ -12,10 +12,17 @@ html, pre, p, span, a, button, div, ul, li, text, strong{
     font-family: Arial, serif;
 }
 
-.contentImg{
+.contentImg {
     width: 80%;
     max-width: 80%;
     margin-left: 10%;
+}
+
+.contentImgAbout{
+    width: 10cm;
+    max-width: 10cm;
+    //margin-left: 10%;
+    text-align: center;
 }
 
 .contentImgSm{
