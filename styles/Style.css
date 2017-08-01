@@ -21,7 +21,9 @@ html, pre, p, span, a, button, div, ul, li, text, strong{
 .contentImgAbout{
     width: 10cm;
     max-width: 10cm;
-    //margin-left: 10%;
+}
+
+.imgContainer{
     text-align: center;
 }
 
