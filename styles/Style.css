@@ -12,10 +12,33 @@ html, pre, p, span, a, button, div, ul, li, text, strong{
     font-family: Arial, serif;
 }
 
+.cursorHover{
+    cursor: pointer;
+}
+
+.PartnersLogo{
+    width: 40%;
+    max-width: 40%;
+}
+
 .contentImg {
     width: 80%;
     max-width: 80%;
     margin-left: 10%;
+}
+
+.aboutUsBlock{
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm
+}
+.aboutUsBoldText{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.PhotoTeam{
+    width: 25%;
+    max-width: 25%;
 }
 
 .contentImgAbout{

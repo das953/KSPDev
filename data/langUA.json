@@ -5,12 +5,13 @@
     "about" : "Опис",
     "equipment" :  "Обладнання",
     "article" :"Статті",
-    "feedback" :"Зворотній зв'язок",
+    "forum" : "Форум",
     "partners" :"Партнери"
   },
   "leftPanel": {
     "aboutUs": "Наша команда",
     "spectrum": "Галузь роботи",
+    "feedback" :"Зворотній зв'язок",
     "product": "Наш продукт",
     "contacts": "Контакти"
   },

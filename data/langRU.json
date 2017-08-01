@@ -5,11 +5,12 @@
     "about" : "Описание",
     "equipment" :  "Оборудование",
     "article" :"Статьи",
-    "feedback" :"Обратная связь",
+    "forum" : "Форум",
     "partners" :"Партнеры"
   },
   "leftPanel": {
     "aboutUs": "Наша команда",
+    "feedback" :"Обратная связь",
     "spectrum": "Отрасль работы",
     "product": "Наш продукт",
     "contacts": "Контакты"
@@ -25,5 +26,4 @@
     "uncorrectText" : "НЕ УДАЛОСЬ ОТПРАВИТЬ СООБЩЕНИЕ",
     "backBtn" : "ОК"
   }
-
 }

@@ -25,9 +25,10 @@ angular.module('myApp',[])
                         $scope.about        = data["navbar"]["about"];
                         $scope.equipment    = data["navbar"]["equipment"];
                         $scope.article      = data["navbar"]["article"];
-                        $scope.feedback     = data["navbar"]["feedback"];
+                        $scope.forum        = data["navbar"]["forum"];
                         $scope.partners     = data["navbar"]["partners"];
 
+                        $scope.feedback     = data["leftPanel"]["feedback"];
                         $scope.aboutUs      = data["leftPanel"]["aboutUs"];
                         $scope.spectrum     = data["leftPanel"]["spectrum"];
                         $scope.product      = data["leftPanel"]["product"];

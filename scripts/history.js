@@ -1,5 +1,5 @@
-var leftPanelNames = ["AboutUs" , "Spectrum" , "Product" , "Contacts" ];
-var regExp = new RegExp(/^.*type=(.*)$/);
+var leftPanelNames = ["AboutUs" , "Spectrum" , "Feedback" ];
+var regExp = new RegExp(/^.*type=([^&]*).*$/);
 
 $('document').ready(function () {
 

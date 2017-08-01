@@ -25,8 +25,8 @@ function GetData($lang, $type){
                          FROM Content_Blocks
                          INNER JOIN Localizations ON Content_Blocks.LocalizationID = Localizations.ID 
                          INNER JOIN Types ON Content_Blocks.TypeID = Types.ID
-                         WHERE  Localizations.Lang_Name = " . '"' . $lang . '"' .
-                        "AND Types.Description = " . '"' . $type . '"';
+                         WHERE  Localizations.Lang_Name = \"{$lang}\"
+                         AND Types.Description = \"{$type}\"";
 
     $result = $conn->query($sql);
     $res = array();
@@ -91,6 +91,46 @@ function GetContent($lang, $type){
 
 
 
+
+    return $res;
+}
+
+function GetTeam($lang, $type){
+
+    $servername = "localhost";
+    $username = "u_vmsystem";
+    $password = "CDMlVzMf";
+    $dbname = "vmsystem";
+
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+
+    $sql =              "SELECT Content_Blocks.Content, Localizations.Lang_Name, Content_Blocks.Header
+                         FROM Content_Blocks
+                         INNER JOIN Localizations ON Content_Blocks.LocalizationID = Localizations.ID 
+                         INNER JOIN Types ON Content_Blocks.TypeID = Types.ID
+                         WHERE  Localizations.Lang_Name = \"{$lang}\"
+                         AND Types.Description = \"{$type}\"
+                         ORDER BY  Content_Blocks.Header";
+
+    $result = $conn->query($sql);
+    $res = array();
+
+    if ($result->num_rows > 0) {
+
+        while($row = $result->fetch_assoc()) {
+            array_push($res, $row["Content"]);
+        }
+
+    } else {
+        array_push($res, "Error. 0 rows at DB");
+    }
+    $conn->close();
 
     return $res;
 }
