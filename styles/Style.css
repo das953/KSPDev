@@ -12,6 +12,17 @@ html, pre, p, span, a, button, div, ul, li, text, strong{
     font-family: Arial, serif;
 }
 
+.headerMainPhoto{
+    margin: 0 0 0 2%;
+}
+
+.headerPhotos{
+    width: 30%;
+    height: 150px;
+    display: inline-block;
+    margin: 0 0 0 -1%;
+}
+
 .cursorHover{
     cursor: pointer;
 }
@@ -22,9 +33,9 @@ html, pre, p, span, a, button, div, ul, li, text, strong{
 }
 
 .contentImg {
-    width: 80%;
-    max-width: 80%;
-    margin-left: 10%;
+    width: 50%;
+    max-width: 50%;
+    margin-left: 25%;
 }
 
 .aboutUsBlock{
@@ -279,6 +290,7 @@ html, pre, p, span, a, button, div, ul, li, text, strong{
     }
 
     .PhotoLogo {
+
         background-size: cover;
         background-image: url("../resources/img/Logo.png");
 

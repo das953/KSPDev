@@ -31,9 +31,11 @@ var iDocPreview = (isGecko) ? framePreview.contentDocument : framePreview.docume
 
 
 var iHTML = "<html><head></head><body style='border: 0px;'></body> </html>";
-iDoc.open();
-iDoc.write(iHTML);
-iDoc.close();
+console.log(document);
+//iDoc.open();
+//iDoc.write(iHTML);
+//iDoc.close();
+/*
 
 iDocContent.open();
 iDocContent.write(iHTML);
@@ -47,6 +49,7 @@ iDocPreview.close();
 iDoc.designMode = 'on';
 iDocContent.designMode = 'on';
 iDocPreview.designMode = 'on';
+*/
 
 function setImage() {
     iWinContent.focus();
